@@ -5,7 +5,6 @@
 -->
 <data-extraction-rules>
     <cloud-backup>
-        <include domain="file" path="." />
+        <include domain="file" path="settings/size.txt" />
     </cloud-backup>
-    <include domain="file" path="." />
 </data-extraction-rules>
