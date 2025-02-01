@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Echolog</string>
+    <string name="plus_text_size">plus_text_size</string>
+    <string name="minus_text_size">minus_text_size</string>
+    <string name="touch_btn">touch_and_speak</string>
+    <string name="permission_denied">Предоставьте разрешение для микрофона</string>
+</resources>

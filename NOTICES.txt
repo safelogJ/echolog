@@ -1,0 +1,14 @@
+NOTICE
+
+This application includes open source and third-party libraries:
+
+1. vosk-api (https://github.com/alphacep/vosk-api?tab=Apache-2.0-1-ov-file)
+ Licensed under the Apache License, Version 2.0.
+
+2. Free Loading Animation (https://lottiefiles.com/free-animation/loading-mqIYlHgteQ)
+   Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Eddy Koek
+
+3. Free Rotate Phone Animation (https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS)
+   Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Sandeep Maurya

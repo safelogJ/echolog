@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/CenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startBtnGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startActCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/no_data"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLeft"
+        app:layout_constraintTop_toTopOf="@+id/topGuideline">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/black"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorLink="@color/blue_500"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/plus_text_size"
+        android:src="@drawable/plus_icon"
+        app:backgroundTint="@color/black"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/touchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideline"
+        app:rippleColor="@color/black3"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/minus_text_size"
+        android:src="@drawable/minus_icon"
+        app:backgroundTint="@color/black"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
+        app:layout_constraintTop_toBottomOf="@+id/touchView"
+        app:rippleColor="@color/black3"
+        app:tint="@color/white" />
+
+    <com.safelogj.echolog.TouchField
+        android:id="@+id/touchView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/mic_icon"
+        android:contentDescription="@string/touch_btn"
+        app:layout_constraintBottom_toTopOf="@+id/minusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
+        app:layout_constraintTop_toBottomOf="@+id/plusButton"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
