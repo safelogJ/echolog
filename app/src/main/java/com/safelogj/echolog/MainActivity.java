@@ -68,12 +68,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         mController = (AppController) getApplication();
-        if (mBinding.lottieView != null) {
-            mBinding.lottieView.setOnClickListener(view -> {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS"));
-                startActivity(intent);
-            });
-        }
         setText();
         initBtn();
 
@@ -90,23 +84,21 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             });
         }
+        if (mBinding.noticeButton != null) {
+            mBinding.noticeButton.setOnClickListener(view -> startActivity(new Intent(this, NoticeActivity.class)));
+        }
         mRecognizer = mController.getmRecognizer();
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onResume() {
+        super.onResume();
         if (mBinding.NativeView != null) {
             mNativeAd = mController.getNativeAd();
             if (mNativeAd != null) {
                 mBinding.NativeView.setAd(mNativeAd);
             }
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         setText();
         if(mBinding.touchView != null)mBinding.touchView.setBackgroundResource(R.drawable.mic_icon);
     }
@@ -189,8 +181,8 @@ public class MainActivity extends AppCompatActivity {
                         mBinding.textView.setText("Таймаут при распознавании речи");
                     }
                 });
-            } catch (IOException | NullPointerException e) {
-                //
+            } catch (Exception e) {
+                Toast.makeText(this, getString(R.string.error_speech), Toast.LENGTH_LONG).show();
             }
         }
 
@@ -201,10 +193,7 @@ public class MainActivity extends AppCompatActivity {
             mSpeechService.stop();
             mSpeechService = null;
         }
-        if (mBinding.textView != null) {
-            mText = mStringBuilderFin.toString() + partText;
-            if(!mText.contains("null")) mBinding.textView.setText(mText);
-        }
+       buildText();
     }
     private void openAppSettings() {
         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
@@ -224,6 +213,13 @@ public class MainActivity extends AppCompatActivity {
             mText = mController.getText();
             mBinding.textView.setText(mText);
             mBinding.textView.setTextSize(mTextSize);
+        }
+    }
+
+    private void buildText() {
+        if (mBinding.textView != null) {
+            mText = mStringBuilderFin.toString() + partText;
+            if(!mText.contains("null")) mBinding.textView.setText(mText);
         }
     }
 }

@@ -64,10 +64,6 @@ public class UnzipActivity extends AppCompatActivity {
                 }
             }
         });
-        mBinding.lottieView.setOnClickListener(view -> {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://lottiefiles.com/free-animation/loading-mqIYlHgteQ"));
-            startActivity(intent);
-        });
     }
     private void openAppSettings() {
         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);

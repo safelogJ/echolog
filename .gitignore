@@ -9,6 +9,7 @@
 */build/
 gen/
 bin/
+assets/
 
 # Local and generated configurations
 local.properties

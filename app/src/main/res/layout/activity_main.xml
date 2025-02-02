@@ -73,5 +73,19 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/rotate_anim" />
 
+    <Button
+        android:id="@+id/noticeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/notice_btn"
+        android:text="@string/notice_btn"
+        android:textSize="34sp"
+        app:backgroundTint="@color/black"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLeft" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

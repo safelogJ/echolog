@@ -3,11 +3,12 @@ package com.safelogj.echolog;
 import android.app.Application;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
 import com.yandex.mobile.ads.common.AdRequestError;
+import com.yandex.mobile.ads.common.MobileAds;
 import com.yandex.mobile.ads.nativeads.NativeAd;
 import com.yandex.mobile.ads.nativeads.NativeAdLoadListener;
 import com.yandex.mobile.ads.nativeads.NativeAdLoader;
@@ -67,10 +68,6 @@ public class AppController extends Application {
         writeSetting();
     }
 
-    public File getVoskDir() {
-        return voskDir;
-    }
-
     public Recognizer getmRecognizer() {
         return mRecognizer;
     }
@@ -91,6 +88,9 @@ public class AppController extends Application {
             public void onAdFailedToLoad(@NonNull final AdRequestError error) {
                 //
             }
+        });
+        MobileAds.setAgeRestrictedUser(true);
+        MobileAds.initialize(this, () -> {
         });
         mExecutor.execute(this::loadNativeAd);
         if (!voskDir.exists()) {
@@ -130,15 +130,16 @@ public class AppController extends Application {
                 }
                 zis.closeEntry();
             }
-        } catch (IOException e) {
-            //
+            initRec();
+        } catch (Exception e) {
+            Toast.makeText(this, getString(R.string.error_unzip), Toast.LENGTH_LONG).show();
         }
-        initRec();
+
     }
 
     private void loadNativeAd() {
         if (mNativeAdLoader != null) {
-            mNativeAdLoader.loadAd(new NativeAdRequestConfiguration.Builder("demo-native-app-yandex9").build());
+            mNativeAdLoader.loadAd(new NativeAdRequestConfiguration.Builder("R-M-13943864-2").build());
         }
     }
     public void writeSetting() {
@@ -154,9 +155,8 @@ public class AppController extends Application {
                 fos.write(settingsJson.toString().getBytes());
                 fos.flush();
             }
-            Log.e("MyApplication", "сохранении настроек: ");
-        } catch (JSONException | IOException e) {
-            Log.e("MyApplication", "Ошибка при сохранении настроек: " + e.getMessage());
+        } catch (Exception e) {
+            Toast.makeText(this, getString(R.string.error_write), Toast.LENGTH_LONG).show();
         }
 
     }
@@ -168,12 +168,18 @@ public class AppController extends Application {
         if (settingsFile.exists() && settingsFile.isFile()) {
             try (FileInputStream fis = new FileInputStream(settingsFile)) {
                 byte[] data = new byte[(int) settingsFile.length()];
-                fis.read(data);
-                String jsonStr = new String(data);
+                int bytesRead;
+                int totalRead = 0;
+
+                while (totalRead < data.length &&
+                        (bytesRead = fis.read(data, totalRead, data.length - totalRead)) != -1) {
+                    totalRead += bytesRead;
+                }
+                String jsonStr = new String(data, 0, totalRead);
                 JSONObject settingsJson = new JSONObject(jsonStr);
                 textSize = (float) settingsJson.optDouble("mTextSize", 48f);
-            } catch (IOException | JSONException e) {
-                Log.e("MyApplication", "Ошибка при загрузке настроек: " + e.getMessage());
+            } catch (Exception e) {
+                Toast.makeText(this, getString(R.string.error_read), Toast.LENGTH_LONG).show();
                 textSize = 48f;
             }
         } else {
@@ -181,9 +187,15 @@ public class AppController extends Application {
         }
     }
   private void initRec() {
-      mModel = new Model(voskDir.getPath());
-      mRecognizer = new Recognizer(mModel, 16000);
-      mInit = true;
+        try {
+            mModel = new Model(voskDir.getPath());
+            mRecognizer = new Recognizer(mModel, 16000);
+            mInit = true;
+        } catch (Exception e) {
+            mInit = false;
+            Toast.makeText(this, getString(R.string.error_init), Toast.LENGTH_LONG).show();
+        }
+
   }
 }
 
