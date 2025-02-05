@@ -14,7 +14,6 @@ import com.yandex.mobile.ads.nativeads.NativeAdLoadListener;
 import com.yandex.mobile.ads.nativeads.NativeAdLoader;
 import com.yandex.mobile.ads.nativeads.NativeAdRequestConfiguration;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.vosk.Model;
 import org.vosk.Recognizer;
@@ -34,6 +33,7 @@ public class AppController extends Application {
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private File voskDir;
     private String text = "Говорите удерживая микрофон.";
+    private String mErrorText = "";
     private float textSize;
     private NativeAd mNativeAd;
     private NativeAdLoader mNativeAdLoader;
@@ -41,9 +41,18 @@ public class AppController extends Application {
     private Recognizer mRecognizer;
     private Model mModel;
     private boolean mInit;
+    private boolean mError;
 
     public boolean ismInit() {
         return mInit;
+    }
+
+    public String getErrorText() {
+        return mErrorText;
+    }
+
+    public boolean ismError() {
+        return mError;
     }
 
     public NativeAd getNativeAd() {
@@ -107,8 +116,14 @@ public class AppController extends Application {
         if (!mExecutor.isShutdown()) {
             mExecutor.shutdown();
         }
-        if (mModel != null) mModel.close();
-        if (mRecognizer != null) mRecognizer.close();
+        if (mRecognizer != null) {
+            mRecognizer.close();
+            mRecognizer = null;
+        }
+        if (mModel != null) {
+            mModel.close();
+            mModel = null;
+        }
     }
 
     public void unzipAsset() {
@@ -132,7 +147,8 @@ public class AppController extends Application {
             }
             initRec();
         } catch (Exception e) {
-            Toast.makeText(this, getString(R.string.error_unzip), Toast.LENGTH_LONG).show();
+            mError = true;
+            mErrorText = getString(R.string.error_unzip);
         }
 
     }
@@ -192,8 +208,9 @@ public class AppController extends Application {
             mRecognizer = new Recognizer(mModel, 16000);
             mInit = true;
         } catch (Exception e) {
+            mError = true;
             mInit = false;
-            Toast.makeText(this, getString(R.string.error_init), Toast.LENGTH_LONG).show();
+            mErrorText = getString(R.string.error_init);
         }
 
   }

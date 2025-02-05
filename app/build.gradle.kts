@@ -10,8 +10,8 @@ android {
         applicationId = "com.safelogj.echolog"
         minSdk = 21
         targetSdk = 35
-        versionCode = 3
-        versionName = "1.2"
+        versionCode = 4
+        versionName = "1.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -44,7 +44,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.vosk)
+    implementation(libs.vosk) {
+        exclude(group = "net.java.dev.jna", "jna")
+    }
     implementation(libs.netjava)
     implementation(libs.yandexsdk)
     implementation(libs.lottie)

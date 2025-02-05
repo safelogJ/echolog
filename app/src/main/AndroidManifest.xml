@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Echolog"
         tools:targetApi="31">
         <activity
+            android:name=".ErrorActivity"
+            android:exported="false" />
+        <activity
             android:name=".NoticeActivity"
             android:exported="false" />
         <activity

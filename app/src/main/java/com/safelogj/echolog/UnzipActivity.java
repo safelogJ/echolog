@@ -58,6 +58,9 @@ public class UnzipActivity extends AppCompatActivity {
             public void onAnimationRepeat(Animator animation) {
                 if (!isPerm()) {
                     requestRecordPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO);
+                } else if (mController.ismError()) {
+                    startActivity(new Intent(getApplicationContext(), ErrorActivity.class));
+                    finish();
                 } else if (mController.ismInit() && isPerm()) {
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     finish();

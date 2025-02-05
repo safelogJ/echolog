@@ -66,6 +66,7 @@
                 android:fontFamily="serif"
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
+                android:textColorLink="@color/gold_hard"
                 app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="parent"
