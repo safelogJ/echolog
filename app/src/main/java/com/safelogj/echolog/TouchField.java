@@ -1,7 +1,6 @@
 package com.safelogj.echolog;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -9,7 +8,6 @@ import android.view.MotionEvent;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.content.res.ResourcesCompat;
 
 public class TouchField  extends AppCompatButton {
 

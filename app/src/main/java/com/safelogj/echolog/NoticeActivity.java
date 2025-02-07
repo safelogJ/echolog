@@ -28,7 +28,9 @@ public class NoticeActivity extends AppCompatActivity {
         binding.noticeTextView.setText(HtmlCompat.fromHtml(getString(R.string.notice), HtmlCompat.FROM_HTML_MODE_LEGACY));
         binding.noticeTextView.setTextSize(controller.getTextSize());
         binding.noticeTextView.setMovementMethod(LinkMovementMethod.getInstance());
-
+        binding.noticeScrollView2.setBackgroundColor(controller.getFieldColor().getColor());
+        binding.noticeTextView.setTextColor(controller.getTextColor().getColor());
+        binding.noticeTextView.setLinkTextColor(controller.getTextColor().getColor());
     }
 
 }

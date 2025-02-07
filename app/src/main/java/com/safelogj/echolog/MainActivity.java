@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -28,8 +29,6 @@ import org.vosk.Recognizer;
 import org.vosk.android.RecognitionListener;
 import org.vosk.android.SpeechService;
 
-import java.io.IOException;
-
 public class MainActivity extends AppCompatActivity {
     private SpeechService mSpeechService;
     private int permCounter;
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     private AppController mController;
     private float mTextSize;
     private String mText;
-    private NativeAd mNativeAd;
     private Recognizer mRecognizer;
     private String partText;
     private StringBuilder mStringBuilderFin = new StringBuilder();
@@ -68,39 +66,26 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         mController = (AppController) getApplication();
-        setText();
-        initBtn();
-
-        if (mBinding.touchView != null) {
-            mBinding.touchView.setOnTouchListener((v, event) -> {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    mBinding.touchView.setBackgroundResource(R.drawable.mic_red_icon);
-                    startSpeechRecognition();
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    mBinding.touchView.setBackgroundResource(R.drawable.mic_icon);
-                    v.performClick();
-                    stopSpeechRecognition();
-                }
-                return true;
-            });
-        }
-        if (mBinding.noticeButton != null) {
-            mBinding.noticeButton.setOnClickListener(view -> startActivity(new Intent(this, NoticeActivity.class)));
-        }
-        mRecognizer = mController.getmRecognizer();
+        initVolumeBtn();
+        initNavigationBtn();
+        initMicBtn();
+        mRecognizer = mController.getRecognizer();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (mBinding.NativeView != null) {
-            mNativeAd = mController.getNativeAd();
-            if (mNativeAd != null) {
-                mBinding.NativeView.setAd(mNativeAd);
-            }
-        }
+       showNativeAd();
         setText();
         if(mBinding.touchView != null)mBinding.touchView.setBackgroundResource(R.drawable.mic_icon);
+        if (mBinding.lottieView != null && mBinding.rotateImgView != null) {
+            mBinding.lottieView.postDelayed(() -> {
+                if (!mBinding.lottieView.isAnimating()) {
+                    mBinding.lottieView.setVisibility(View.INVISIBLE);
+                    mBinding.rotateImgView.setVisibility(View.VISIBLE);
+                }
+            }, 500);
+        }
     }
 
     @Override
@@ -110,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void initBtn() {
+    private void initVolumeBtn() {
         if (mBinding.textView != null) {
             if (mBinding.plusButton != null) {
                 mBinding.plusButton.setOnClickListener(view -> {
@@ -130,7 +115,39 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    private void initNavigationBtn() {
+        if (mBinding.noticeButton != null) {
+            mBinding.noticeButton.setOnClickListener(view -> startActivity(new Intent(this, NoticeActivity.class)));
+        }
 
+        if (mBinding.colorButton != null) {
+            mBinding.colorButton.setOnClickListener(view -> startActivity(new Intent(this, ColorsActivity.class)));
+        }
+    }
+
+    private void initMicBtn() {
+        if (mBinding.touchView != null) {
+            mBinding.touchView.setOnTouchListener((v, event) -> {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    mBinding.touchView.setBackgroundResource(R.drawable.mic_red_icon);
+                    startSpeechRecognition();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                   mBinding.touchView.setBackgroundResource(R.drawable.mic_icon);
+                    v.performClick();
+                    stopSpeechRecognition();
+                }
+                return true;
+            });
+        }
+    }
+private void showNativeAd() {
+    if (mBinding.NativeView != null) {
+        NativeAd nativeAd = mController.getNativeAd();
+        if (nativeAd != null) {
+            mBinding.NativeView.setAd(nativeAd);
+        }
+    }
+}
     private void startSpeechRecognition() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             requestRecordPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO);
@@ -213,6 +230,10 @@ public class MainActivity extends AppCompatActivity {
             mText = mController.getText();
             mBinding.textView.setText(mText);
             mBinding.textView.setTextSize(mTextSize);
+            mBinding.textView.setTextColor(mController.getTextColor().getColor());
+        }
+        if (mBinding.scrollView2 != null) {
+            mBinding.scrollView2.setBackgroundColor(mController.getFieldColor().getColor());
         }
     }
 

@@ -21,7 +21,6 @@ import org.vosk.Recognizer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -29,6 +28,9 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class AppController extends Application {
+    private static final String TEXT_SIZE_KEY = "textSizeKey";
+    private static final String TEXT_COLOR_KEY = "textColorKey";
+    private static final String FIELD_COLOR_KEY = "fieldColorKey";
     private final ExecutorService mExecutor = Executors.newSingleThreadExecutor();
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private File voskDir;
@@ -42,6 +44,26 @@ public class AppController extends Application {
     private Model mModel;
     private boolean mInit;
     private boolean mError;
+    private ColorsPalette textColor;
+    private ColorsPalette fieldColor;
+
+    public ColorsPalette getTextColor() {
+        return textColor;
+    }
+
+    public void setTextColor(ColorsPalette textColor) {
+        this.textColor = textColor;
+        writeSetting();
+    }
+
+    public ColorsPalette getFieldColor() {
+        return fieldColor;
+    }
+
+    public void setFieldColor(ColorsPalette fieldColor) {
+        this.fieldColor = fieldColor;
+        writeSetting();
+    }
 
     public boolean ismInit() {
         return mInit;
@@ -77,7 +99,7 @@ public class AppController extends Application {
         writeSetting();
     }
 
-    public Recognizer getmRecognizer() {
+    public Recognizer getRecognizer() {
         return mRecognizer;
     }
 
@@ -105,7 +127,7 @@ public class AppController extends Application {
         if (!voskDir.exists()) {
             mExecutor.execute(this::unzipAsset);
         } else {
-            initRec();
+            initRecognizer();
         }
         readSettings();
     }
@@ -145,7 +167,7 @@ public class AppController extends Application {
                 }
                 zis.closeEntry();
             }
-            initRec();
+            initRecognizer();
         } catch (Exception e) {
             mError = true;
             mErrorText = getString(R.string.error_unzip);
@@ -158,10 +180,13 @@ public class AppController extends Application {
             mNativeAdLoader.loadAd(new NativeAdRequestConfiguration.Builder("R-M-13943864-2").build());
         }
     }
+
     public void writeSetting() {
         JSONObject settingsJson = new JSONObject();
         try {
-            settingsJson.put("mTextSize", textSize);
+            settingsJson.put(TEXT_SIZE_KEY, textSize);
+            settingsJson.put(FIELD_COLOR_KEY, fieldColor.ordinal());
+            settingsJson.put(TEXT_COLOR_KEY, textColor.ordinal());
             File settingsDir = new File(mFileDir, "settings");
             if (!settingsDir.exists()) {
                 settingsDir.mkdirs();
@@ -193,16 +218,19 @@ public class AppController extends Application {
                 }
                 String jsonStr = new String(data, 0, totalRead);
                 JSONObject settingsJson = new JSONObject(jsonStr);
-                textSize = (float) settingsJson.optDouble("mTextSize", 48f);
+                textSize = (float) settingsJson.optDouble(TEXT_SIZE_KEY, 48f);
+                fieldColor = ColorsPalette.values()[settingsJson.optInt(FIELD_COLOR_KEY, ColorsPalette.BLACK.ordinal())];
+                textColor = ColorsPalette.values()[settingsJson.optInt(TEXT_COLOR_KEY, ColorsPalette.WHITE.ordinal())];
             } catch (Exception e) {
                 Toast.makeText(this, getString(R.string.error_read), Toast.LENGTH_LONG).show();
-                textSize = 48f;
+                setDefaultSettings();
             }
         } else {
-            textSize = 48f;
+            setDefaultSettings();
         }
     }
-  private void initRec() {
+
+    private void initRecognizer() {
         try {
             mModel = new Model(voskDir.getPath());
             mRecognizer = new Recognizer(mModel, 16000);
@@ -213,6 +241,12 @@ public class AppController extends Application {
             mErrorText = getString(R.string.error_init);
         }
 
-  }
+    }
+
+    private void setDefaultSettings() {
+        textSize = 48f;
+        fieldColor = ColorsPalette.BLACK;
+        textColor = ColorsPalette.WHITE;
+    }
 }
 
