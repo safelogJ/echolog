@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plus_text_size">plus_text_size</string>
+    <string name="minus_text_size">minus_text_size</string>
+    <string name="touch_btn">touch_and_speak</string>
+    <string name="notice_btn">Инструкция</string>
+    <string name="color_btn">Цвета</string>
+    <string name="start">Далее</string>
+    <string name="color_view_text"><![CDATA[Выберите цвет фона и текста:<br><br>
+Чёрный фон и белый текст → классический высокий контраст.<br><br>
+Чёрный фон и жёлтый текст → высокая контрастность, удобна для дислексии.<br><br>
+Синий фон и белый текст → хорошо различимо.<br><br>
+Тёмно-синий фон и жёлтый текст → повышенная читаемость.<br><br>
+Тёмно-зелёный фон и белый текст → мягкий контраст, удобен для дальтоников.<br><br>
+Тёмно-серый фон и белый текст → сниженная яркость, удобна для светочувствительности.<br>]]>
+    </string>
+    <string name="color_field">Цвет фона</string>
+    <string name="color_text">Цвет текста</string>
+    <string name="rotate_img">Поверните телефон</string>
+    <string name="wait">Подготовка.</string>
+    <string name="permission_denied">Предоставьте разрешение для микрофона</string>
+    <string name="error_init">Ошибка инициализации, перезапустите приложение</string>
+    <string name="error_unzip">Ошибка распаковки библиотеки, перезапустите приложение</string>
+    <string name="error_write">Ошибка записи настроек</string>
+    <string name="error_read">Ошибка чтения настроек</string>
+    <string name="error_speech">Ошибка распознавания речи</string>
+    <string name="error_timeout">Таймаут при распознавании речи</string>
+    <string name="need_speak">Говорите удерживая микрофон.</string>
+    <string name="copied_text">Текст скопирован</string>
+    <string name="notice"><![CDATA[
+<br><b>Инструкция:</b><br><br>
+1. Удерживайте кнопку микрофона и говорите. Приложение в реальном времени будет анализировать звук. Предварительный результат
+ сразу будет отображаться на экране.<br>
+2. Закончите фразу, дождитесь когда текстовое поле очистится от предварительного результата и после этого отпустите кнопку микрофона.<br>
+3. На экране появиться финальный результат с вашей фразой.<br><br>
+Если вы отпускаете кнопку микрофона до окончания фразы, результатом так и останется предварительный вариант.<br><br>
+    <br><br><b>Это приложение включает в себя библиотеки с открытым исходным кодом и сторонние библиотеки:</b><br><br>
+1. <b>vosk-model-small-ru-0.22</b> <a href="https://github.com/alphacep/vosk-space/blob/master/models.md?ysclid=m6nbuv402c728193722">Ссылка</a><br>
+ Licensed under the Apache License, Version 2.0.<br><br>
+2. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Ссылка</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21)<br>
+   <b>Автор:</b> Eddy Koek<br><br>
+3. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Ссылка</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21)<br>
+   <b>Автор:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy">Политика конфиденциальности</a></b><br>
+]]></string>
+</resources>
