@@ -33,6 +33,8 @@ obj/
 # Keystore files
 *.jks
 *.keystore
+*.pkcs12
+*.p12
 
 # Eclipse legacy files
 .classpath

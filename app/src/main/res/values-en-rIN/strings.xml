@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Cold start made the button stick — hands free mode activated 😅</string>
+    <string name="plus_text_size">increase text size</string>
+    <string name="minus_text_size">decrease text size</string>
+    <string name="touch_btn">tap and speak</string>
+    <string name="notice_btn">Instructions</string>
+    <string name="color_btn">Colours</string>
+    <string name="start">Next</string>
+    <string name="color_view_text"><![CDATA[Select background and text colour:<br><br>
+Black background with white text → classic high contrast.<br><br>
+Black background with yellow text → high contrast, helpful for dyslexia.<br><br>
+Blue background with white text → clearly visible.<br><br>
+Dark blue background with yellow text → enhanced readability.<br><br>
+Dark green background with white text → soft contrast, suitable for colour blindness.<br><br>
+Dark grey background with white text → reduced brightness, suitable for light sensitivity.<br>]]>
+</string>
+    <string name="color_field">Background colour</string>
+    <string name="color_text">Text colour</string>
+    <string name="rotate_img">Please rotate your phone</string>
+    <string name="wait">Preparing…</string>
+    <string name="permission_denied">Please grant microphone permission</string>
+    <string name="error_init">Library initialization error.
+        The voice model files may have been deleted or corrupted by third-party applications (optimizers, memory cleaners, etc.).
+        Please try reinstalling the application.</string>
+    <string name="error_unzip">Error extracting library, please restart the app</string>
+    <string name="error_write">Error saving settings</string>
+    <string name="error_read">Error reading settings</string>
+    <string name="error_speech">Speech recognition error</string>
+    <string name="error_timeout">Speech recognition timed out</string>
+    <string name="need_speak">Hold the mic button and speak.</string>
+    <string name="copied_text">Text copied</string>
+    <string name="notice"><![CDATA[
+<br><b>Instructions:</b><br><br>
+1. Press and hold the mic button and speak. The app will process your speech in real-time. A temporary result
+will appear on the screen.<br>
+2. Once you\'ve finished speaking, wait for the temporary result to disappear, then release the mic button.<br>
+3. The final output will be displayed on the screen.<br><br>
+If you release the mic button before finishing your sentence, only the temporary result will be saved.<br><br>
+    <br><br><b>This application uses open-source and third-party libraries:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Link</a><br>
+ Licensed under the Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ The version of the library being used is shown in the app.<br>
+ You may use your own VOSK model version by downloading the archive of your choice from, for example:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Mobile versions are generally labelled "small" and are about 50MB in size.<br>
+ Extract it and place the resulting folder — ideally without duplicates — into the app directory:<br>
+  /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ If your custom library initialises successfully, its name will be shown in the app. Otherwise, the built-in version will be used.<br><br>
+2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Link</a><br>
+   Licensed under the Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Link</a><br>
+     Licensed under the Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Link</a><br>
+      Licensed under the Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Link</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21).<br>
+   <b>Author:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Link</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21).<br>
+   <b>Author:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-en-rin">Privacy Policy</a></b><br>
+]]></string>
+
+</resources>

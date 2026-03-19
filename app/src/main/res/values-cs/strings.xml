@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Studený start způsobil, že tlačítko zůstalo stisknuté — režim volných rukou aktivován 😅</string>
+    <string name="plus_text_size">zvětšit velikost textu</string>
+    <string name="minus_text_size">zmenšit velikost textu</string>
+    <string name="touch_btn">stiskněte a mluvte</string>
+    <string name="notice_btn">Pokyny</string>
+    <string name="color_btn">Barvy</string>
+    <string name="start">Další</string>
+    <string name="color_view_text"><![CDATA[Vyberte barvu pozadí a textu:<br><br>
+Černé pozadí a bílý text → klasický vysoký kontrast.<br><br>
+Černé pozadí a žlutý text → vysoký kontrast, vhodné pro dyslexii.<br><br>
+Modré pozadí a bílý text → dobře čitelné.<br><br>
+Tmavě modré pozadí a žlutý text → zvýšená čitelnost.<br><br>
+Tmavě zelené pozadí a bílý text → jemný kontrast, vhodné pro barvoslepé.<br><br>
+Tmavě šedé pozadí a bílý text → snížený jas, vhodné pro citlivost na světlo.<br>]]>
+</string>
+    <string name="color_field">Barva pozadí</string>
+    <string name="color_text">Barva textu</string>
+    <string name="rotate_img">Otočte telefon</string>
+    <string name="wait">Příprava…</string>
+    <string name="permission_denied">Povolte mikrofon</string>
+    <string name="error_init">Chyba inicializace knihovny.
+        Soubory hlasového modelu mohly být smazány nebo poškozeny aplikacemi třetích stran (optimalizátory, čističi paměti apod.).
+        Zkuste přeinstalovat aplikaci.</string>
+    <string name="error_unzip">Chyba při extrahování knihovny, restartujte aplikaci</string>
+    <string name="error_write">Chyba při ukládání nastavení</string>
+    <string name="error_read">Chyba při čtení nastavení</string>
+    <string name="error_speech">Chyba rozpoznávání řeči</string>
+    <string name="error_timeout">Vypršení časového limitu rozpoznávání řeči</string>
+    <string name="need_speak">Mluvte, když držíte mikrofon.</string>
+    <string name="copied_text">Text zkopírován</string>
+    <string name="notice"><![CDATA[
+<br><b>Pokyny:</b><br><br>
+1. Držte tlačítko mikrofonu a mluvte. Aplikace bude analyzovat zvuk v reálném čase. Předběžný výsledek
+se okamžitě zobrazí na obrazovce.<br>
+2. Po dokončení věty počkejte, až předběžný výsledek zmizí z obrazovky, a poté pusťte tlačítko mikrofonu.<br>
+3. Konečný výsledek se zobrazí na obrazovce.<br><br>
+Pokud tlačítko mikrofonu pustíte dříve, než dokončíte větu, bude uložen pouze předběžný výsledek.<br><br>
+    <br><br><b>Tato aplikace používá open source a knihovny třetích stran:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Odkaz</a><br>
+ Licencováno pod Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ Použitá verze knihovny bude zobrazena na obrazovce aplikace.<br>
+ Můžete použít svou verzi knihovny VOSK, pro to musíte stáhnout požadovanou verzi archiv, například na odkazu:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Archiv pro mobilní zařízení je obvykle označen jako "small" a má velikost přibližně 50MB.<br>
+ Extrahujte jej a umístěte získanou složku (nejlépe bez duplicit) do složky aplikace:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Pokud vaše knihovna bude úspěšně inicializována, její název se zobrazí na obrazovce aplikace. Jinak se inicializuje vestavěná verze.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Odkaz</a><br>
+  Licencováno pod Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Odkaz</a><br>
+    Licencováno pod Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Odkaz</a><br>
+     Licencováno pod Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Odkaz</a><br>
+   Licencováno pod Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Odkaz</a><br>
+   Licencováno pod Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-cs">Zásady ochrany osobních údajů</a></b><br>
+]]></string>
+
+</resources>

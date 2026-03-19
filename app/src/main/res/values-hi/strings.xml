@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">कोल्ड स्टार्ट के कारण बटन अटक गया — हैंड्स-फ्री मोड चालू 😅</string>
+    <string name="plus_text_size">टेक्स्ट आकार बढ़ाएं</string>
+    <string name="minus_text_size">टेक्स्ट आकार घटाएं</string>
+    <string name="touch_btn">दबाएं और बोलें</string>
+    <string name="notice_btn">निर्देश</string>
+    <string name="color_btn">रंग</string>
+    <string name="start">आगे</string>
+    <string name="color_view_text"><![CDATA[पृष्ठभूमि और टेक्स्ट रंग चुनें:<br><br>
+काले पृष्ठभूमि और सफेद टेक्स्ट → पारंपरिक उच्च विपरीत।<br><br>
+काले पृष्ठभूमि और पीला टेक्स्ट → उच्च विपरीत, डिस्लेक्सिया के लिए उपयुक्त।<br><br>
+नीला पृष्ठभूमि और सफेद टेक्स्ट → अच्छा पठनीय।<br><br>
+गहरे नीले पृष्ठभूमि और पीला टेक्स्ट → पठनीयता बढ़ाता है।<br><br>
+गहरे हरे पृष्ठभूमि और सफेद टेक्स्ट → मुलायम विपरीत, रंग अंधे के लिए उपयुक्त।<br><br>
+गहरे ग्रे पृष्ठभूमि और सफेद टेक्स्ट → कम चमक, हल्के संवेदनशीलता के लिए उपयुक्त।<br>]]>
+</string>
+    <string name="color_field">पृष्ठभूमि रंग</string>
+    <string name="color_text">टेक्स्ट रंग</string>
+    <string name="rotate_img">फोन घुमाएं</string>
+    <string name="wait">तैयारी हो रही है…</string>
+    <string name="permission_denied">कृपया माइक अनुमति दें</string>
+    <string name="error_init">लाइब्रेरी को इनिशियलाइज़ करने में त्रुटि। वॉइस मॉडल फ़ाइलें थर्ड-पार्टी ऐप्स (ऑप्टिमाइज़र, मेमोरी क्लीनर आदि) द्वारा हटाई या क्षतिग्रस्त की जा सकती हैं। कृपया ऐप को पुनः इंस्टॉल करने का प्रयास करें।</string>
+    <string name="error_unzip">लाइब्रेरी अनज़िप त्रुटि, कृपया एप्लिकेशन को पुनः प्रारंभ करें</string>
+    <string name="error_write">सेटिंग्स सहेजने में त्रुटि</string>
+    <string name="error_read">सेटिंग्स पढ़ने में त्रुटि</string>
+    <string name="error_speech">वॉयस रिकग्निशन त्रुटि</string>
+    <string name="error_timeout">वॉयस रिकग्निशन टाइमआउट</string>
+    <string name="need_speak">कृपया माइक्रोफोन को दबाकर बोलें।</string>
+    <string name="copied_text">टेक्स्ट कॉपी किया गया</string>
+    <string name="notice"><![CDATA[
+<br><b>निर्देश:</b><br><br>
+1. माइक्रोफोन बटन दबाए रखें और बोलें। एप्लिकेशन वास्तविक समय में ध्वनि का विश्लेषण करेगा। प्रारंभिक परिणाम
+तुरंत स्क्रीन पर दिखाई देगा।<br>
+2. अपनी वाक्य को समाप्त करने के बाद, प्रारंभिक परिणाम स्क्रीन से गायब होने तक प्रतीक्षा करें, फिर माइक्रोफोन बटन को छोड़ें।<br>
+3. अंतिम परिणाम स्क्रीन पर दिखाई देगा।<br><br>
+अगर आप वाक्य समाप्त करने से पहले माइक्रोफोन बटन छोड़ देते हैं, तो केवल प्रारंभिक परिणाम ही सहेजा जाएगा।<br><br>
+    <br><br><b>यह एप्लिकेशन खुले स्रोत और तृतीय-पक्ष पुस्तकालयों का उपयोग करता है:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">लिंक</a><br>
+ Apache License, Version 2.0 के तहत लाइसेंस प्राप्त है।<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ उपयोग किए जा रहे पुस्तकालय का संस्करण एप्लिकेशन स्क्रीन पर प्रदर्शित होगा।<br>
+ आप अपनी VOSK लाइब्रेरी का संस्करण भी उपयोग कर सकते हैं, इसके लिए आपको इच्छित संस्करण का संग्रह डाउनलोड करना होगा, उदाहरण के लिए निम्नलिखित लिंक से:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ मोबाइल उपकरणों के लिए संग्रह सामान्यतः "small" के रूप में नामित होता है और इसका आकार लगभग 50MB होता है।<br>
+ इसे अनज़िप करें, और प्राप्त फ़ोल्डर (साथ ही डुप्लिकेट्स से बचने के लिए) को एप्लिकेशन फ़ोल्डर में रखें:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ अगर आपकी लाइब्रेरी सफलतापूर्वक प्रारंभ होती है, तो इसका नाम एप्लिकेशन स्क्रीन पर प्रदर्शित होगा। अन्यथा, इनबिल्ट संस्करण प्रारंभ होगा।<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">लिंक</a><br>
+ Apache License, Version 2.0 के तहत लाइसेंस प्राप्त है।<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">लिंक</a><br>
+   Apache License, Version 2.0 के तहत लाइसेंस प्राप्त है।<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">लिंक</a><br>
+    Apache License, Version 2.0 के तहत लाइसेंस प्राप्त है।<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>मुफ्त लोडिंग एनीमेशन</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">लिंक</a><br>
+   Lottie Simple License (FL 9.13.21) के तहत लाइसेंस प्राप्त है।<br>
+   <b>लेखक:</b> Eddy Koek<br><br>
+6. <b>मुफ्त फोन घुमाने की एनीमेशन</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">लिंक</a><br>
+   Lottie Simple License (FL 9.13.21) के तहत लाइसेंस प्राप्त है।<br>
+   <b>लेखक:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-hi">गोपनीयता नीति</a></b><br>
+]]></string>
+
+</resources>

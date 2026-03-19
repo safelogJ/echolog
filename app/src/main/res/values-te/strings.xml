@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">చల్లటి ప్రారంభం వల్ల బటన్ స్టక్ అయింది — హ్యాండ్స్‌ఫ్రీ మోడ్ యాక్టివేట్ అయ్యింది 😅</string>
+    <string name="plus_text_size">పాఠ్యం పరిమాణాన్ని పెంచు</string>
+    <string name="minus_text_size">పాఠ్యం పరిమాణాన్ని తగ్గించు</string>
+    <string name="touch_btn">అదిరబట్టి మాట్లాడండి</string>
+    <string name="notice_btn">సూచనలు</string>
+    <string name="color_btn">రంగులు</string>
+    <string name="start">తరువాత</string>
+    <string name="color_view_text"><![CDATA[నేపథ్యం మరియు పాఠ్యం రంగును ఎంచుకోండి:<br><br>
+నలుపు నేపథ్యం మరియు తెలుపు పాఠ్యం → సంప్రదాయ అధిక కాంట్రాస్ట్.<br><br>
+నలుపు నేపథ్యం మరియు పసుపు పాఠ్యం → డిస్లెక్సియాకు అనుకూలంగా ఉండే అధిక కాంట్రాస్ట్.<br><br>
+నీలం నేపథ్యం మరియు తెలుపు పాఠ్యం → చదవడానికి సులభం.<br><br>
+గాఢ నీలం నేపథ్యం మరియు పసుపు పాఠ్యం → చదవదగినతను మెరుగుపరుస్తుంది.<br><br>
+గాఢ ఆకుపచ్చ నేపథ్యం మరియు తెలుపు పాఠ్యం → మృదువైన కాంట్రాస్ట్, రంగు గ్రహణ లోపం ఉన్నవారికి అనుకూలం.<br><br>
+గాఢ బూడిద రంగు నేపథ్యం మరియు తెలుపు పాఠ్యం → తక్కువ ప్రకాశం, కాంతి సున్నితత్వానికి అనుకూలం.<br>]]>
+</string>
+    <string name="color_field">నేపథ్య రంగు</string>
+    <string name="color_text">పాఠ్యం రంగు</string>
+    <string name="rotate_img">ఫోన్‌ను తిప్పండి</string>
+    <string name="wait">సిద్ధమవుతోంది.</string>
+    <string name="permission_denied">దయచేసి మైక్రోఫోన్ అనుమతిని ఇవ్వండి</string>
+    <string name="error_init">లైబ్రరీ ఆరంభ లోపం. వాయిస్ మోడల్ ఫైల్‌లు మూడవ పక్ష అనువర్తనాలు (ఆప్టిమైజర్లు, మెమరీ క్లీనర్లు మొదలైనవి) ద్వారా తొలగించబడిన లేదా దెబ్బతిన్నవిగా ఉండవచ్చు. యాప్‌ను మళ్లీ ఇన్‌స్టాల్ చేయడానికి ప్రయత్నించండి.</string>
+    <string name="error_unzip">లైబ్రరీను అన్‌జిప్ చేయడంలో లోపం, యాప్‌ను మళ్లీ ప్రారంభించండి</string>
+    <string name="error_write">సెట్టింగ్‌లను భద్రపరచడంలో లోపం</string>
+    <string name="error_read">సెట్టింగ్‌లను చదవడంలో లోపం</string>
+    <string name="error_speech">మాటల గుర్తింపు లోపం</string>
+    <string name="error_timeout">మాటల గుర్తింపు టైమ్‌అవుట్</string>
+    <string name="need_speak">మైక్రోఫోన్‌ను నొక్కి పట్టుకుని మాట్లాడండి.</string>
+    <string name="copied_text">పాఠ్యం కాపీ చేయబడింది</string>
+    <string name="notice"><![CDATA[
+<br><b>సూచనలు:</b><br><br>
+1. మైక్రోఫోన్ బటన్‌ను నొక్కి ఉంచి మాట్లాడండి. యాప్ ప్రత్యక్షంగా మీ మాటలను విశ్లేషిస్తుంది. తాత్కాలిక ఫలితాన్ని
+తక్షణమే స్క్రీన్‌పై చూపుతుంది.<br>
+2. వాక్యం పూర్తయ్యాక తాత్కాలిక ఫలితం స్క్రీన్ నుంచి తొలిగే వరకు వేచి ఉండండి, తరువాత మైక్రోఫోన్ బటన్‌ను వదలండి.<br>
+3. మీ వాక్యం పూర్తిగా స్క్రీన్ పై చూపబడుతుంది.<br><br>
+వాక్యం పూర్తికాకముందే మైక్రోఫోన్ బటన్‌ను వదిలేస్తే, కేవలం తాత్కాలిక ఫలితమే సేవ్ అవుతుంది.<br><br>
+<br><br><b>ఈ యాప్ ఓపెన్ సోర్స్ మరియు మూడవ పక్ష గ్రంథాలయాలను ఉపయోగిస్తుంది:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">లింక్</a><br>
+ Apache లైసెన్స్, వెర్షన్ 2.0 ప్రకారం లైసెన్స్ పొందింది.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ మీరు ఉపయోగిస్తున్న మోడల్ వెర్షన్ యాప్ స్క్రీన్‌పై చూపబడుతుంది.<br>
+ మీరు మీ స్వంత VOSK మోడల్‌ను ఉపయోగించవచ్చు. ఇందుకోసం మీరు కావలసిన వెర్షన్‌ను ఈ లింక్ ద్వారా డౌన్‌లోడ్ చేయవచ్చు:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ మొబైల్ మోడల్స్ సాధారణంగా “small” గా ఉంటాయి మరియు దాదాపు 50MB పరిమాణంలో ఉంటాయి.<br>
+ దానిని అన్‌జిప్ చేసి, పొందిన ఫోల్డర్‌ను యాప్ ఫోల్డర్‌లో ఉంచండి:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ మోడల్ విజయవంతంగా ప్రారంభమైతే, దాని పేరు యాప్ స్క్రీన్‌పై చూపబడుతుంది. లేదంటే, డిఫాల్ట్ మోడల్ ఉపయోగించబడుతుంది.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">లింక్</a><br>
+ Apache లైసెన్స్, వెర్షన్ 2.0 ప్రకారం లైసెన్స్ పొందింది.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">లింక్</a><br>
+   Apache లైసెన్స్, వెర్షన్ 2.0 ప్రకారం లైసెన్స్ పొందింది.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">లింక్</a><br>
+    Apache లైసెన్స్, వెర్షన్ 2.0 ప్రకారం లైసెన్స్ పొందింది.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">లింక్</a><br>
+ Lottie Simple License (FL 9.13.21) కింద లైసెన్స్ పొందింది.<br>
+ <b>రచయిత:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">లింక్</a><br>
+ Lottie Simple License (FL 9.13.21) కింద లైసెన్స్ పొందింది.<br>
+ <b>రచయిత:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-te">గోప్యతా విధానం</a></b><br>
+]]></string>
+
+</resources>

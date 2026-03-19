@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Malvarma ekfunkcio igis la butonon glui — senmanlibra reĝimo aktivigita 😅</string>
+    <string name="plus_text_size">pligrandigi tekston</string>
+    <string name="minus_text_size">malpligrandigi tekston</string>
+    <string name="touch_btn">premu kaj parolu</string>
+    <string name="notice_btn">Gvidlinio</string>
+    <string name="color_btn">Koloroj</string>
+    <string name="start">Sekva</string>
+    <string name="color_view_text"><![CDATA[Elektu fonan kaj tekstan koloron:<br><br>
+Nigra fono kaj blanka teksto → klasika alta kontrasto.<br><br>
+Nigra fono kaj flava teksto → alta kontrasto, taŭga por disleksio.<br><br>
+Blua fono kaj blanka teksto → facile legeblas.<br><br>
+Mareca blua fono kaj flava teksto → pli alta legebleco.<br><br>
+Malhelverda fono kaj blanka teksto → mola kontrasto, taŭga por kolora blindeco.<br><br>
+Malhelgriza fono kaj blanka teksto → malalta brilo, taŭga por luma sentemo.<br>]]>
+</string>
+    <string name="color_field">Fona koloro</string>
+    <string name="color_text">Teksta koloro</string>
+    <string name="rotate_img">Roti telefonon</string>
+    <string name="wait">Pretigante…</string>
+    <string name="permission_denied">Donu permeson al mikrofono</string>
+    <string name="error_init">Eraro dum la inicialigo de la biblioteko.
+        La voĉmodelaj dosieroj eble estis forigitaj aŭ difektitaj de triaj aplikaĵoj (optimumigiloj, memorpurigistoj ktp.).
+        Provu reinstali la aplikaĵon.</string>
+    <string name="error_unzip">Eraro de ekstraktado de biblioteko, relanĉu la aplikaĵon</string>
+    <string name="error_write">Eraro dum konservado de agordoj</string>
+    <string name="error_read">Eraro dum legado de agordoj</string>
+    <string name="error_speech">Eraro dum parolrekono</string>
+    <string name="error_timeout">Temporlimito de parolrekono</string>
+    <string name="need_speak">Parolu dum vi tenas la mikrofonon.</string>
+    <string name="copied_text">Teksto kopiiĝis</string>
+    <string name="notice"><![CDATA[
+<br><b>Gvidlinio:</b><br><br>
+1. Tenadu la butonon de la mikrofono kaj parolu. La aplikaĵo analizos la sonon en reala tempo. Provrezulto
+apereos tuj sur la ekrano.<br>
+2. Post kiam vi finos vian frazon, atendu ĝis la provrezulto malaperos de la ekrano, tiam lasu la mikrofonan butonon.<br>
+3. La fina rezulto aperos sur la ekrano.<br><br>
+Se vi lasos la butonon de la mikrofono antaŭ ol fini la frazon, nur la provrezulto estos konservita.<br><br>
+    <br><br><b>Ĉi tiu aplikaĵo uzas malferman fonton kaj triaj-bibliotekojn:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Ligo</a><br>
+ Licencita sub Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ La versio de la uzata biblioteko estos montrita sur la ekrano de la aplikaĵo.<br>
+ Vi povas uzi vian propran version de VOSK, por tio vi devas elŝuti la deziratan version, ekzemple el la ligo:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ La arkivo por moveblaj aparatoj estas kutime nomata "small" kaj ĝi pezas ĉirkaŭ 50MB.<br>
+ Ekstraktu ĝin, kaj metu la akiritan dosierujon (preferinde sen duplikatoj) en la aplikaĵan dosierujon: <br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Se via biblioteko estas sukcese inicializita, ĝia nomo aperos sur la ekrano de la aplikaĵo. Alie, la enborda versio estos uzata.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Ligo</a><br>
+   Licencita sub Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Ligo</a><br>
+     Licencita sub Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Ligo</a><br>
+      Licencita sub Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Senpaga ŝarĝa animacio</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Ligo</a><br>
+   Licencita sub Lottie Simple License (FL 9.13.21).<br>
+   <b>Aŭtoro:</b> Eddy Koek<br><br>
+6. <b>Senpaga telefon-rota animacio</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Ligo</a><br>
+   Licencita sub Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-eo">Privateca politiko</a></b><br>
+]]></string>
+
+</resources>

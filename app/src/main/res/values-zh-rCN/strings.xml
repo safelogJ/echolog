@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">冷启动导致按钮卡住了 — 免提模式已激活 😅</string>
+    <string name="plus_text_size">增大文字大小</string>
+    <string name="minus_text_size">减小文字大小</string>
+    <string name="touch_btn">点击并说话</string>
+    <string name="notice_btn">使用说明</string>
+    <string name="color_btn">颜色</string>
+    <string name="start">下一步</string>
+    <string name="color_view_text"><![CDATA[请选择背景色和文字颜色：<br><br>
+黑色背景配白色文字 → 经典高对比度。<br><br>
+黑色背景配黄色文字 → 高对比度，适合阅读障碍者。<br><br>
+蓝色背景配白色文字 → 易于阅读。<br><br>
+深蓝色背景配黄色文字 → 提高可读性。<br><br>
+深绿色背景配白色文字 → 柔和对比度，适合色盲用户。<br><br>
+深灰色背景配白色文字 → 降低亮度，适合光敏感人群。<br>]]>
+</string>
+    <string name="color_field">背景颜色</string>
+    <string name="color_text">文字颜色</string>
+    <string name="rotate_img">请旋转手机</string>
+    <string name="wait">正在准备…</string>
+    <string name="permission_denied">请授予麦克风权限</string>
+    <string name="error_init">库初始化错误。语音模型文件可能已被第三方应用程序（优化器、内存清理工具等）删除或损坏。请尝试重新安装应用。</string>
+    <string name="error_unzip">解压库文件出错，请重新启动应用</string>
+    <string name="error_write">保存设置时出错</string>
+    <string name="error_read">读取设置时出错</string>
+    <string name="error_speech">语音识别出错</string>
+    <string name="error_timeout">语音识别超时</string>
+    <string name="need_speak">按住麦克风按钮并讲话。</string>
+    <string name="copied_text">文本已复制</string>
+    <string name="notice"><![CDATA[
+<br><b>使用说明：</b><br><br>
+1. 按住麦克风按钮并说话。应用会实时分析语音。初步结果
+将显示在屏幕上。<br>
+2. 说完后，请等待初步结果消失，然后松开麦克风按钮。<br>
+3. 最终结果将显示在屏幕上。<br><br>
+如果在句子未说完前松开麦克风按钮，只会保存初步结果。<br><br>
+    <br><br><b>本应用使用开源和第三方库：</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">链接</a><br>
+ 根据 Apache License 2.0 版本授权。<br>
+ Copyright © Alpha Cephei Inc.<br><br>
+ 应用中会显示所使用的库版本。<br>
+ 您也可以使用自己的 VOSK 库版本，只需下载所需版本的压缩包，例如：<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ 移动设备用的版本通常标记为 "small"，大小约为 50MB。<br>
+ 解压后将文件夹（建议不要重名）放入应用文件夹中：<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ 如果库初始化成功，其名称会显示在应用界面上，否则将使用内置版本。<br><br>
+   2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">链接</a><br>
+   根据 Apache License 2.0 版本授权。<br>
+   Copyright © Airbnb, Inc.<br><br>
+ 3. <b>Okio</b> <a href="https://github.com/square/okio">链接</a><br>
+  根据 Apache License 2.0 版本授权。<br>
+   Copyright © Square, Inc.<br><br>
+ 4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">链接</a><br>
+   根据 Apache License 2.0 版本授权。<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>免费加载动画</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">链接</a><br>
+   根据 Lottie Simple License (FL 9.13.21) 授权。<br>
+   <b>作者：</b> Eddy Koek<br><br>
+6. <b>免费旋转手机动画</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">链接</a><br>
+   根据 Lottie Simple License (FL 9.13.21) 授权。<br>
+   <b>作者：</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-cn">隐私政策</a></b><br>
+]]></string>
+
+</resources>

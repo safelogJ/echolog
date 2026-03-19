@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">El inicio en frío hizo que el botón se quedara presionado — modo manos libres activado 😅</string>
+    <string name="plus_text_size">aumentar tamaño del texto</string>
+    <string name="minus_text_size">disminuir tamaño del texto</string>
+    <string name="touch_btn">presiona y habla</string>
+    <string name="notice_btn">Instrucciones</string>
+    <string name="color_btn">Colores</string>
+    <string name="start">Siguiente</string>
+    <string name="color_view_text"><![CDATA[Seleccione el color de fondo y del texto:<br><br>
+Fondo negro con texto blanco → alto contraste clásico.<br><br>
+Fondo negro con texto amarillo → alto contraste, útil para dislexia.<br><br>
+Fondo azul con texto blanco → buena legibilidad.<br><br>
+Fondo azul oscuro con texto amarillo → mejor legibilidad.<br><br>
+Fondo verde oscuro con texto blanco → contraste suave, adecuado para personas con daltonismo.<br><br>
+Fondo gris oscuro con texto blanco → brillo reducido, adecuado para sensibilidad a la luz.<br>]]>
+</string>
+    <string name="color_field">Color de fondo</string>
+    <string name="color_text">Color del texto</string>
+    <string name="rotate_img">Gire el teléfono</string>
+    <string name="wait">Preparando…</string>
+    <string name="permission_denied">Por favor, permite el acceso al micrófono</string>
+    <string name="error_init">Error de inicialización de la biblioteca.
+        Es posible que los archivos del modelo de voz hayan sido eliminados o dañados por aplicaciones de terceros (optimizadores, limpiadores de memoria, etc.).
+        Intenta reinstalar la aplicación.</string>
+    <string name="error_unzip">Error al extraer la biblioteca, reinicia la aplicación</string>
+    <string name="error_write">Error al guardar los ajustes</string>
+    <string name="error_read">Error al leer los ajustes</string>
+    <string name="error_speech">Error en el reconocimiento de voz</string>
+    <string name="error_timeout">Tiempo de espera superado en el reconocimiento de voz</string>
+    <string name="need_speak">Mantén presionado el micrófono y habla.</string>
+    <string name="copied_text">Texto copiado</string>
+    <string name="notice"><![CDATA[
+<br><b>Instrucciones:</b><br><br>
+1. Mantén presionado el botón del micrófono y habla. La aplicación analizará tu voz en tiempo real. El resultado preliminar
+aparecerá en pantalla.<br>
+2. Una vez termines la frase, espera a que desaparezca el resultado preliminar y suelta el botón del micrófono.<br>
+3. El resultado final aparecerá en la pantalla.<br><br>
+Si sueltas el botón antes de terminar la frase, solo se guardará el resultado preliminar.<br><br>
+    <br><br><b>Esta aplicación utiliza bibliotecas de código abierto y de terceros:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Enlace</a><br>
+ Licenciado bajo Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ La versión utilizada de la biblioteca se muestra en la app.<br>
+ Puedes usar tu propia versión del modelo VOSK descargando el archivo correspondiente, por ejemplo desde:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ El archivo para dispositivos móviles normalmente se denomina "small" y tiene un tamaño de unos 50 MB.<br>
+ Extrae el contenido y coloca la carpeta resultante —sin duplicados preferiblemente— en:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Si se inicializa correctamente, el nombre del modelo aparecerá en pantalla. De lo contrario, se utilizará la versión integrada.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Enlace</a><br>
+   Licenciado bajo Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Enlace</a><br>
+    Licenciado bajo Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Enlace</a><br>
+      Licenciado bajo Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Animación de carga gratuita</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Enlace</a><br>
+   Licenciado bajo Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Eddy Koek<br><br>
+6. <b>Animación gratuita de rotación del teléfono</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Enlace</a><br>
+   Licenciado bajo Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-es">Política de privacidad</a></b><br>
+]]></string>
+
+</resources>

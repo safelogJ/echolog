@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">L\'inici en fred ha fet que el botó s\'enganxi — mode mans lliures activat 😅</string>
+    <string name="plus_text_size">augmentar la mida del text</string>
+    <string name="minus_text_size">disminuir la mida del text</string>
+    <string name="touch_btn">prem i parla</string>
+    <string name="notice_btn">Instruccions</string>
+    <string name="color_btn">Colors</string>
+    <string name="start">Següent</string>
+    <string name="color_view_text"><![CDATA[Seleccioneu el color de fons i del text:<br><br>
+Fons negre i text blanc → contrast elevat clàssic.<br><br>
+Fons negre i text groc → contrast alt, adequat per a la dislèxia.<br><br>
+Fons blau i text blanc → ben llegible.<br><br>
+Fons blau fosc i text groc → millora la llegibilitat.<br><br>
+Fons verd fosc i text blanc → contrast suau, adequat per a persones amb daltonisme.<br><br>
+Fons gris fosc i text blanc → brillantor baixa, adequat per a la sensibilitat a la llum.<br>]]>
+</string>
+    <string name="color_field">Color de fons</string>
+    <string name="color_text">Color del text</string>
+    <string name="rotate_img">Gira el telèfon</string>
+    <string name="wait">Preparant…</string>
+    <string name="permission_denied">Dona permís per al micròfon</string>
+    <string name="error_init">Error d\'inicialització de la biblioteca.
+        Els fitxers del model de veu poden haver estat suprimits o danyats per aplicacions de tercers (optimitzadors, netejadors de memòria, etc.).
+        Prova de reinstal·lar l\'aplicació.</string>
+    <string name="error_unzip">Error en descomprimir la biblioteca, reinicia l\'aplicació</string>
+    <string name="error_write">Error en desar la configuració</string>
+    <string name="error_read">Error en llegir la configuració</string>
+    <string name="error_speech">Error en el reconeixement de veu</string>
+    <string name="error_timeout">Temps d\'espera del reconeixement de veu excedit</string>
+    <string name="need_speak">Mantén premut el micròfon i parla.</string>
+    <string name="copied_text">Text copiat</string>
+    <string name="notice"><![CDATA[
+<br><b>Instruccions:</b><br><br>
+1. Mantén premut el botó del micròfon i parla. L\'aplicació analitzarà la veu en temps real. El resultat preliminar
+es mostrarà immediatament a la pantalla.<br>
+2. Quan acabis la frase, espera que el resultat preliminar desaparegui de la pantalla i després deixa anar el botó del micròfon.<br>
+3. El resultat final apareixerà a la pantalla.<br><br>
+Si deixes anar el botó del micròfon abans d\'acabar la frase, només es desarà el resultat preliminar.<br><br>
+    <br><br><b>Aquesta aplicació utilitza biblioteques de codi obert i de tercers:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Enllaç</a><br>
+ Llicència Apache, versió 2.0.<br>
+ Copyright © Alpha Cephei Inc.<br><br>
+ La versió de la biblioteca utilitzada es mostra a la pantalla de l\'aplicació.<br>
+ Pots utilitzar la teva pròpia versió de la biblioteca VOSK descarregant l\'arxiu desitjat, per exemple des de:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Els arxius per a dispositius mòbils normalment es denominen "small" i tenen una mida d\'uns 50 MB.<br>
+ Descomprimeix-lo i posa la carpeta resultant (preferiblement sense duplicats) a la carpeta de l\'aplicació:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Si la teva biblioteca s\'inicialitza correctament, el seu nom es mostrarà a la pantalla de l\'aplicació. Si no, s\'utilitzarà la versió integrada.<br><br>
+2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Enllaç</a><br>
+    Llicència Apache, versió 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Enllaç</a><br>
+    Llicència Apache, versió 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Enllaç</a><br>
+    Llicència Apache, versió 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Animació de càrrega gratuïta</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Enllaç</a><br>
+   Llicència Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Eddy Koek<br><br>
+6. <b>Animació gratuïta de rotació del telèfon</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Enllaç</a><br>
+   Llicència Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-ca">Política de privacitat</a></b><br>
+]]></string>
+
+</resources>

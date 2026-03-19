@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Khởi động lạnh khiến nút bị kẹt — chế độ rảnh tay đã bật 😅</string>
+    <string name="plus_text_size">tăng kích thước văn bản</string>
+    <string name="minus_text_size">giảm kích thước văn bản</string>
+    <string name="touch_btn">nhấn và nói</string>
+    <string name="notice_btn">Hướng dẫn</string>
+    <string name="color_btn">Màu sắc</string>
+    <string name="start">Tiếp theo</string>
+    <string name="color_view_text"><![CDATA[Chọn màu nền và màu chữ:<br><br>
+Nền đen và chữ trắng → độ tương phản cao cổ điển.<br><br>
+Nền đen và chữ vàng → độ tương phản cao, phù hợp cho người mắc chứng khó đọc.<br><br>
+Nền xanh lam và chữ trắng → dễ đọc.<br><br>
+Nền xanh đậm và chữ vàng → cải thiện khả năng đọc.<br><br>
+Nền xanh lá đậm và chữ trắng → độ tương phản nhẹ, phù hợp với người mù màu.<br><br>
+Nền xám đậm và chữ trắng → độ sáng thấp, phù hợp cho người nhạy cảm với ánh sáng.<br>]]>
+</string>
+    <string name="color_field">Màu nền</string>
+    <string name="color_text">Màu chữ</string>
+    <string name="rotate_img">Xoay điện thoại</string>
+    <string name="wait">Đang chuẩn bị…</string>
+    <string name="permission_denied">Vui lòng cấp quyền truy cập micro</string>
+    <string name="error_init">Lỗi khởi tạo thư viện. Các tệp mô hình giọng nói có thể đã bị xóa hoặc hỏng do ứng dụng bên thứ ba (trình tối ưu hóa, trình dọn dẹp bộ nhớ, v.v.). Hãy thử cài đặt lại ứng dụng.</string>
+    <string name="error_unzip">Lỗi giải nén thư viện, hãy khởi động lại ứng dụng</string>
+    <string name="error_write">Lỗi lưu cài đặt</string>
+    <string name="error_read">Lỗi đọc cài đặt</string>
+    <string name="error_speech">Lỗi nhận dạng giọng nói</string>
+    <string name="error_timeout">Hết thời gian nhận dạng giọng nói</string>
+    <string name="need_speak">Giữ nút micro và nói.</string>
+    <string name="copied_text">Văn bản đã được sao chép</string>
+    <string name="notice"><![CDATA[
+<br><b>Hướng dẫn:</b><br><br>
+1. Giữ nút micro và nói. Ứng dụng sẽ phân tích giọng nói theo thời gian thực. Kết quả tạm thời
+sẽ hiển thị trên màn hình.<br>
+2. Sau khi nói xong, chờ kết quả tạm thời biến mất rồi thả nút micro.<br>
+3. Kết quả cuối cùng sẽ hiển thị trên màn hình.<br><br>
+Nếu bạn thả nút micro trước khi kết thúc câu, chỉ kết quả tạm thời sẽ được lưu.<br><br>
+    <br><br><b>Ứng dụng này sử dụng thư viện mã nguồn mở và của bên thứ ba:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Liên kết</a><br>
+ Được cấp phép theo Apache License, Version 2.0.<br>
+  Copyright © Alpha Cephei Inc.<br><br>
+ Phiên bản thư viện đang sử dụng sẽ hiển thị trong ứng dụng.<br>
+ Bạn có thể sử dụng phiên bản VOSK của riêng bạn bằng cách tải xuống gói phù hợp, ví dụ tại:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Gói dành cho thiết bị di động thường được gọi là "small" và có dung lượng khoảng 50MB.<br>
+ Giải nén và đặt thư mục kết quả — tốt nhất không có trùng lặp — vào thư mục ứng dụng:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Nếu thư viện được khởi tạo thành công, tên của nó sẽ xuất hiện trong ứng dụng. Nếu không, phiên bản tích hợp sẽ được sử dụng.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Liên kết</a><br>
+   Được cấp phép theo Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+ 3. <b>Okio</b> <a href="https://github.com/square/okio">Liên kết</a><br>
+   Được cấp phép theo Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+ 4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Liên kết</a><br>
+   Được cấp phép theo Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Hoạt ảnh tải miễn phí</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Liên kết</a><br>
+   Cấp phép theo Lottie Simple License (FL 9.13.21).<br>
+   <b>Tác giả:</b> Eddy Koek<br><br>
+6. <b>Hoạt ảnh xoay điện thoại miễn phí</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Liên kết</a><br>
+   Cấp phép theo Lottie Simple License (FL 9.13.21).<br>
+   <b>Tác giả:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-vi">Chính sách quyền riêng tư</a></b><br>
+]]></string>
+
+</resources>

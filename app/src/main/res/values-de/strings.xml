@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Kalter Start hat den Knopf hängen lassen — Freisprechmodus aktiviert 😅</string>
+    <string name="plus_text_size">Textgröße vergrößern</string>
+    <string name="minus_text_size">Textgröße verkleinern</string>
+    <string name="touch_btn">drücken und sprechen</string>
+    <string name="notice_btn">Anleitung</string>
+    <string name="color_btn">Farben</string>
+    <string name="start">Weiter</string>
+    <string name="color_view_text"><![CDATA[Wählen Sie Hintergrund- und Textfarbe aus:<br><br>
+Schwarzer Hintergrund mit weißem Text → klassischer hoher Kontrast.<br><br>
+Schwarzer Hintergrund mit gelbem Text → hoher Kontrast, geeignet für Dyslexie.<br><br>
+Blauer Hintergrund mit weißem Text → gut lesbar.<br><br>
+Dunkelblauer Hintergrund mit gelbem Text → bessere Lesbarkeit.<br><br>
+Dunkelgrüner Hintergrund mit weißem Text → sanfter Kontrast, geeignet für Farbenblinde.<br><br>
+Dunkelgrauer Hintergrund mit weißem Text → geringere Helligkeit, geeignet bei Lichtempfindlichkeit.<br>]]>
+</string>
+    <string name="color_field">Hintergrundfarbe</string>
+    <string name="color_text">Textfarbe</string>
+    <string name="rotate_img">Telefon drehen</string>
+    <string name="wait">Wird vorbereitet…</string>
+    <string name="permission_denied">Mikrofonzugriff verweigert – bitte erlauben</string>
+    <string name="error_init">Fehler bei der Initialisierung der Bibliothek.
+        Die Sprachmodell-Dateien wurden möglicherweise von Drittanbieter-Apps (Optimierer, Speicherbereiniger usw.) gelöscht oder beschädigt.
+        Bitte versuchen Sie, die App neu zu installieren.</string>
+    <string name="error_unzip">Fehler beim Entpacken der Bibliothek, App neu starten</string>
+    <string name="error_write">Fehler beim Speichern der Einstellungen</string>
+    <string name="error_read">Fehler beim Laden der Einstellungen</string>
+    <string name="error_speech">Fehler bei der Spracherkennung</string>
+    <string name="error_timeout">Zeitüberschreitung bei der Spracherkennung</string>
+    <string name="need_speak">Zum Sprechen Mikrofon-Taste gedrückt halten.</string>
+    <string name="copied_text">Text kopiert</string>
+    <string name="notice"><![CDATA[
+<br><b>Anleitung:</b><br><br>
+1. Halten Sie die Mikrofontaste gedrückt und sprechen Sie. Die App analysiert Ihre Sprache in Echtzeit. Das vorläufige Ergebnis
+wird auf dem Bildschirm angezeigt.<br>
+2. Beenden Sie Ihren Satz, warten Sie, bis das vorläufige Ergebnis verschwindet, und lassen Sie dann die Mikrofontaste los.<br>
+3. Das endgültige Ergebnis wird auf dem Bildschirm angezeigt.<br><br>
+Wenn Sie die Taste vorzeitig loslassen, wird nur das vorläufige Ergebnis gespeichert.<br><br>
+    <br><br><b>Diese App verwendet Open-Source- und Drittanbieter-Bibliotheken:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Link</a><br>
+ Lizenziert unter der Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ Die verwendete Bibliotheksversion wird in der App angezeigt.<br>
+ Sie können Ihre eigene VOSK-Version verwenden, indem Sie ein gewünschtes Archiv herunterladen, z. B.:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Für mobile Geräte ist die Version meist mit „small“ gekennzeichnet und etwa 50 MB groß.<br>
+ Entpacken Sie sie und legen Sie den entpackten Ordner (ohne Duplikate) in folgenden Pfad:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Wenn die Bibliothek erfolgreich initialisiert wird, erscheint der Name in der App. Andernfalls wird die integrierte Version verwendet.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Link</a><br>
+   Lizenziert unter der Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Link</a><br>
+     Lizenziert unter der Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Link</a><br>
+      Lizenziert unter der Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Freie Ladeanimation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Link</a><br>
+   Lizenziert unter der Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Eddy Koek<br><br>
+6. <b>Freie Telefon-Rotate-Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Link</a><br>
+   Lizenziert unter der Lottie Simple License (FL 9.13.21).<br>
+   <b>Autor:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-de">Datenschutzerklärung</a></b><br>
+]]></string>
+
+</resources>

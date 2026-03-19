@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">コールドスタートでボタンが固まっちゃった — ハンズフリーモードが有効になりました 😅</string>
+    <string name="plus_text_size">テキストサイズを大きくする</string>
+    <string name="minus_text_size">テキストサイズを小さくする</string>
+    <string name="touch_btn">押して話す</string>
+    <string name="notice_btn">指示</string>
+    <string name="color_btn">色</string>
+    <string name="start">次へ</string>
+    <string name="color_view_text"><![CDATA[背景色とテキスト色を選択してください：<br><br>
+黒い背景と白いテキスト → クラシックな高コントラスト。<br><br>
+黒い背景と黄色いテキスト → 高いコントラスト、ディスレクシアに適している。<br><br>
+青い背景と白いテキスト → 読みやすい。<br><br>
+紺色の背景と黄色いテキスト → 読みやすさが向上する。<br><br>
+暗い緑の背景と白いテキスト → ソフトなコントラスト、色覚異常に適している。<br><br>
+暗い灰色の背景と白いテキスト → 明るさが低く、光に敏感な方に適している。<br>]]>
+</string>
+    <string name="color_field">背景色</string>
+    <string name="color_text">テキスト色</string>
+    <string name="rotate_img">携帯電話を回転させてください</string>
+    <string name="wait">準備中…</string>
+    <string name="permission_denied">マイクの許可を与えてください</string>
+    <string name="error_init">ライブラリの初期化エラー。音声モデルのファイルがサードパーティのアプリ（最適化ツール、メモリクリーナーなど）によって削除または破損された可能性があります。アプリを再インストールしてみてください。</string>
+    <string name="error_unzip">ライブラリ展開エラー、アプリを再起動してください</string>
+    <string name="error_write">設定の保存エラー</string>
+    <string name="error_read">設定の読み取りエラー</string>
+    <string name="error_speech">音声認識エラー</string>
+    <string name="error_timeout">音声認識タイムアウト</string>
+    <string name="need_speak">マイクを押しながら話してください。</string>
+    <string name="copied_text">テキストがコピーされました</string>
+    <string name="notice"><![CDATA[
+<br><b>指示:</b><br><br>
+1. マイクボタンを押しながら話してください。アプリはリアルタイムで音声を分析します。予備結果はすぐに画面に表示されます。<br>
+2. 文を終わらせたら、予備結果が画面から消えるまで待ち、マイクボタンを離してください。<br>
+3. 最終結果が画面に表示されます。<br><br>
+もし、文を終わらせる前にマイクボタンを離した場合、予備結果のみが保存されます。<br><br>
+    <br><br><b>このアプリケーションはオープンソースおよびサードパーティライブラリを使用しています：</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">リンク</a><br>
+ Apache License, Version 2.0 のもとでライセンスされています。<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ 使用中のライブラリバージョンはアプリ画面に表示されます。<br>
+ 自分のVOSKライブラリのバージョンを使用することもできます。その場合、必要なバージョンのアーカイブをダウンロードしてください。例えば、以下のリンクから：<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ モバイル用のアーカイブは通常「small」と呼ばれ、約50MBのサイズです。<br>
+ アーカイブを解凍し、得られたフォルダ（できれば重複なし）をアプリのフォルダに配置してください：<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ ライブラリが正常に初期化されると、その名前がアプリ画面に表示されます。そうでない場合は、組み込みのバージョンが初期化されます。<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">リンク</a><br>
+ Apache License, Version 2.0 のもとでライセンスされています。<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">リンク</a><br>
+   Apache License, Version 2.0 のもとでライセンスされています。<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">リンク</a><br>
+    Apache License, Version 2.0 のもとでライセンスされています。<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>無料ローディングアニメーション</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">リンク</a><br>
+   Lottie Simple License (FL 9.13.21) のもとでライセンスされています。<br>
+   <b>作成者：</b> Eddy Koek<br><br>
+6. <b>無料電話回転アニメーション</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">リンク</a><br>
+   Lottie Simple License (FL 9.13.21) のもとでライセンスされています。<br>
+   <b>作成者：</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-ja">プライバシーポリシー</a></b><br>
+]]></string>
+
+</resources>

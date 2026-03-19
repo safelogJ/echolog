@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Sovuq ishga tushirish tugmani yopishtirib qo‘ydi — qo‘lsiz rejim yoqildi 😅</string>
+    <string name="plus_text_size">matn hajmini oshirish</string>
+    <string name="minus_text_size">matn hajmini kamaytirish</string>
+    <string name="touch_btn">bosing va gapiring</string>
+    <string name="notice_btn">Ko\'rsatma</string>
+    <string name="color_btn">Ranglar</string>
+    <string name="start">Keyingi</string>
+    <string name="color_view_text"><![CDATA[Fon va matn rangini tanlang:<br><br>
+Qora fon va oq matn → klassik yuqori kontrast.<br><br>
+Qora fon va sariq matn → disleksiya uchun qulay yuqori kontrast.<br><br>
+Ko\'k fon va oq matn → o\'qilishi oson.<br><br>
+To\'q ko\'k fon va sariq matn → o\'qilishini yaxshilaydi.<br><br>
+To\'q yashil fon va oq matn → yumshoq kontrast, ranglarni ajrata olmaydiganlar uchun mos.<br><br>
+To\'q kulrang fon va oq matn → past yorqinlik, yorug\'lik sezuvchanligi uchun qulay.<br>]]>
+</string>
+    <string name="color_field">Fon rangi</string>
+    <string name="color_text">Matn rangi</string>
+    <string name="rotate_img">Telefonni aylantiring</string>
+    <string name="wait">Tayyorlanmoqda.</string>
+    <string name="permission_denied">Mikrofonga ruxsat bering</string>
+    <string name="error_init">Kutubxonani ishga tushirish xatosi.
+        Ovoz modeli fayllari uchinchi tomon ilovalari (optimallashtiruvchilar, xotira tozalagichlar va h.k.)
+        tomonidan o‘chirilgan yoki buzilgan bo‘lishi mumkin. Ilovani qayta o‘rnab ko‘ring.</string>
+    <string name="error_unzip">Kutubxonani ochishda xatolik, ilovani qayta ishga tushiring</string>
+    <string name="error_write">Sozlamalarni saqlashda xatolik</string>
+    <string name="error_read">Sozlamalarni o\'qishda xatolik</string>
+    <string name="error_speech">Nutqni aniqlashda xatolik</string>
+    <string name="error_timeout">Nutqni aniqlash vaqti tugadi</string>
+    <string name="need_speak">Mikrofoni bosib turgan holda gapiring.</string>
+    <string name="copied_text">Matn nusxalandi</string>
+    <string name="notice"><![CDATA[
+<br><b>Ko\'rsatma:</b><br><br>
+1. Mikrofon tugmasini bosib turing va gapiring. Ilova nutqni real vaqtda tahlil qiladi. Dastlabki natija
+darhol ekranda paydo bo\'ladi.<br>
+2. Gapni tugatgach, dastlabki natija ekrandan yo\'qolishini kuting, keyin mikrofon tugmasini qo\'yib yuboring.<br>
+3. Yakuniy natija ekranda ko\'rsatiladi.<br><br>
+Agar gapni tugatmasdan mikrofon tugmasini qo\'yib yuborsangiz, faqat dastlabki natija saqlanadi.<br><br>
+<br><br><b>Ushbu ilova ochiq manbali va uchinchi tomon kutubxonalaridan foydalanadi:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Havola</a><br>
+ Apache License, 2.0-versiyasi asosida litsenziyalangan.<br>
+  Copyright © Alpha Cephei Inc.<br><br>
+ Foydalanilayotgan kutubxona versiyasi ilova ekranida ko\'rsatiladi.<br>
+ Siz o\'z VOSK kutubxonangizdan foydalanishingiz mumkin, buning uchun kerakli versiyani yuklab oling, masalan quyidagi havola orqali:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Mobil qurilmalar uchun arxiv odatda "small" deb nomlanadi va taxminan 50MB bo\'ladi.<br>
+ Uni oching va hosil bo\'lgan papkani (ilova papkasiga nusxalanmasdan) quyidagi manzilga joylashtiring:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Agar kutubxona muvaffaqiyatli ishga tushsa, uning nomi ilova ekranida ko\'rsatiladi. Aks holda, ichki versiya ishlatiladi.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Havola</a><br>
+   Apache License, 2.0-versiyasi asosida litsenziyalangan.<br>
+   Copyright © Airbnb, Inc.<br><br>
+ 3. <b>Okio</b> <a href="https://github.com/square/okio">Havola</a><br>
+   Apache License, 2.0-versiyasi asosida litsenziyalangan.<br>
+   Copyright © Square, Inc.<br><br>
+ 4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Havola</a><br>
+   Apache License, 2.0-versiyasi asosida litsenziyalangan.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Havola</a><br>
+   Lottie Simple License (FL 9.13.21) asosida litsenziyalangan.<br>
+   <b>Muallif:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Havola</a><br>
+   Lottie Simple License (FL 9.13.21) asosida litsenziyalangan.<br>
+   <b>Muallif:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-uz">Maxfiylik siyosati</a></b><br>
+]]></string>
+
+</resources>

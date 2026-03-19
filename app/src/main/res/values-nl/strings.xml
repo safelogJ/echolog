@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Koude start liet de knop vastzitten — handsfree-modus geactiveerd 😅</string>
+    <string name="plus_text_size">verhoog de tekstgrootte</string>
+    <string name="minus_text_size">verlaag de tekstgrootte</string>
+    <string name="touch_btn">druk en spreek</string>
+    <string name="notice_btn">Instructies</string>
+    <string name="color_btn">Kleuren</string>
+    <string name="start">Verder</string>
+    <string name="color_view_text"><![CDATA[Kies de achtergrond- en tekstkleur:<br><br>
+Zwarte achtergrond en witte tekst → klassieke hoge contrasten.<br><br>
+Zwarte achtergrond en gele tekst → hoog contrast, geschikt voor dyslexie.<br><br>
+Blauwe achtergrond en witte tekst → goed leesbaar.<br><br>
+Donkerblauwe achtergrond en gele tekst → verhoogde leesbaarheid.<br><br>
+Donkergroene achtergrond en witte tekst → zacht contrast, geschikt voor kleurenblindheid.<br><br>
+Donkergrijze achtergrond en witte tekst → verlaagde helderheid, geschikt voor lichtgevoeligheid.<br>]]>
+</string>
+    <string name="color_field">Achtergrondkleur</string>
+    <string name="color_text">Tekstkleur</string>
+    <string name="rotate_img">Draai de telefoon</string>
+    <string name="wait">Bezig met voorbereiden…</string>
+    <string name="permission_denied">Geef toestemming voor de microfoon</string>
+    <string name="error_init">Fout bij initialisatie van de bibliotheek.
+        De spraakmodelfiles zijn mogelijk verwijderd of beschadigd door apps van derden (optimalisatieprogramma’s, geheugenopschoners, enz.).
+        Probeer de app opnieuw te installeren.</string>
+    <string name="error_unzip">Fout bij het uitpakken van de bibliotheek, herstart de applicatie</string>
+    <string name="error_write">Fout bij het opslaan van instellingen</string>
+    <string name="error_read">Fout bij het lezen van instellingen</string>
+    <string name="error_speech">Spraakherkenningsfout</string>
+    <string name="error_timeout">Spraakherkenningstime-out</string>
+    <string name="need_speak">Houd de microfoon ingedrukt en spreek.</string>
+    <string name="copied_text">Tekst gekopieerd</string>
+    <string name="notice"><![CDATA[
+<br><b>Instructies:</b><br><br>
+1. Houd de microfoonknop ingedrukt en spreek. De app zal de spraak in real-time analyseren. Het voorlopige resultaat
+wordt direct op het scherm weergegeven.<br>
+2. Nadat je de zin hebt voltooid, wacht tot het voorlopige resultaat van het scherm verdwijnt en laat de microfoonknop dan los.<br>
+3. Het definitieve resultaat verschijnt op het scherm.<br><br>
+Als je de microfoonknop loslaat voordat je de zin voltooit, wordt alleen het voorlopige resultaat opgeslagen.<br><br>
+    <br><br><b>Deze app maakt gebruik van open source en externe bibliotheken:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Link</a><br>
+ Gelicentieerd onder de Apache License, Versie 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ De gebruikte versie van de bibliotheek wordt weergegeven in de applicatie.<br>
+ Je kunt je eigen versie van de VOSK-bibliotheek gebruiken door het gewenste archief te downloaden, bijvoorbeeld van:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ De archieven voor mobiele apparaten worden meestal aangeduid als "small" en hebben een grootte van ongeveer 50 MB.<br>
+ Pak het uit en zet de verkregen map (bij voorkeur zonder duplicaten) in de applicatiemap:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Als je bibliotheek succesvol wordt geïnitialiseerd, wordt de naam ervan weergegeven in de applicatie. Anders wordt de ingebouwde versie gebruikt.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Link</a><br>
+ Gelicentieerd onder de Apache License, Versie 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Link</a><br>
+   Gelicentieerd onder de Apache License, Versie 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Link</a><br>
+    Gelicentieerd onder de Apache License, Versie 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Gratis laadanimatie</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Link</a><br>
+   Gelicentieerd onder de Lottie Simple License (FL 9.13.21).<br>
+   <b>Auteur:</b> Eddy Koek<br><br>
+6. <b>Gratis rotatie van telefoon animatie</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Link</a><br>
+   Gelicentieerd onder de Lottie Simple License (FL 9.13.21).<br>
+   <b>Auteur:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-nl">Privacybeleid</a></b><br>
+]]></string>
+
+</resources>

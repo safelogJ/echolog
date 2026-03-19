@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">شروع سرد باعث شد دکمه گیر کند — حالت بدون نیاز به دست فعال شد 😅</string>
+    <string name="plus_text_size">افزایش اندازه متن</string>
+    <string name="minus_text_size">کاهش اندازه متن</string>
+    <string name="touch_btn">فشار دهید و صحبت کنید</string>
+    <string name="notice_btn">دستورالعمل</string>
+    <string name="color_btn">رنگ‌ها</string>
+    <string name="start">ادامه</string>
+    <string name="color_view_text"><![CDATA[رنگ پس‌زمینه و متن را انتخاب کنید:<br><br>
+پس‌زمینه سیاه و متن سفید → کنتراست بالا کلاسیک.<br><br>
+پس‌زمینه سیاه و متن زرد → کنتراست بالا، مناسب برای دیسلکسی.<br><br>
+پس‌زمینه آبی و متن سفید → خوانایی خوب.<br><br>
+پس‌زمینه آبی تیره و متن زرد → خوانایی افزایش یافته.<br><br>
+پس‌زمینه سبز تیره و متن سفید → کنتراست ملایم، مناسب برای کور رنگ‌ها.<br><br>
+پس‌زمینه خاکی تیره و متن سفید → روشنایی پایین، مناسب برای حساسیت به نور.<br>]]>
+</string>
+    <string name="color_field">رنگ پس‌زمینه</string>
+    <string name="color_text">رنگ متن</string>
+    <string name="rotate_img">گوشی را بچرخانید</string>
+    <string name="wait">در حال آماده‌سازی…</string>
+    <string name="permission_denied">اجازه دسترسی به میکروفن را بدهید</string>
+    <string name="error_init">خطا در مقداردهی اولیه کتابخانه. ممکن است فایل‌های مدل صوتی توسط برنامه‌های شخص ثالث (بهینه‌سازها، پاک‌کننده‌های حافظه و غیره) حذف یا خراب شده باشند. لطفاً برنامه را دوباره نصب کنید.</string>
+    <string name="error_unzip">خطا در استخراج کتابخانه، برنامه را مجدداً راه‌اندازی کنید</string>
+    <string name="error_write">خطا در ذخیره تنظیمات</string>
+    <string name="error_read">خطا در خواندن تنظیمات</string>
+    <string name="error_speech">خطای تشخیص صدا</string>
+    <string name="error_timeout">خطای تایم‌اوت تشخیص صدا</string>
+    <string name="need_speak">میکروفن را نگه داشته و صحبت کنید.</string>
+    <string name="copied_text">متن کپی شد</string>
+    <string name="notice"><![CDATA[
+<br><b>دستورالعمل:</b><br><br>
+1. دکمه میکروفن را نگه دارید و صحبت کنید. برنامه صدا را در زمان واقعی تجزیه و تحلیل خواهد کرد. نتیجه اولیه
+بلافاصله روی صفحه نمایش داده خواهد شد.<br>
+2. پس از اتمام جمله، منتظر بمانید تا نتیجه اولیه از صفحه ناپدید شود و سپس دکمه میکروفن را رها کنید.<br>
+3. نتیجه نهایی روی صفحه ظاهر خواهد شد.<br><br>
+اگر قبل از اتمام جمله دکمه میکروفن را رها کنید، تنها نتیجه اولیه ذخیره خواهد شد.<br><br>
+    <br><br><b>این برنامه از کتابخانه‌های متن‌باز و کتابخانه‌های شخص ثالث استفاده می‌کند:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">لینک</a><br>
+ تحت مجوز Apache License، نسخه 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ نسخه کتابخانه مورد استفاده در صفحه برنامه نمایش داده می‌شود.<br>
+ شما می‌توانید نسخه خود از کتابخانه VOSK را با دانلود آرشیو نسخه دلخواه خود استفاده کنید، به عنوان مثال از:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ آرشیوهای مخصوص دستگاه‌های موبایل معمولاً با نام "small" شناخته می‌شوند و حدود 50 مگابایت حجم دارند.<br>
+ آن را از حالت فشرده خارج کرده و پوشه به‌دست‌آمده (ترجیحاً بدون تکرار) را در پوشه برنامه قرار دهید:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ اگر کتابخانه شما به‌درستی راه‌اندازی شود، نام آن در صفحه برنامه نمایش داده خواهد شد. در غیر این صورت، نسخه داخلی راه‌اندازی خواهد شد.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">لینک</a><br>
+   تحت مجوز Apache License، نسخه 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">لینک</a><br>
+   تحت مجوز Apache License، نسخه 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">لینک</a><br>
+      تحت مجوز Apache License، نسخه 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>انیمیشن بارگذاری رایگان</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">لینک</a><br>
+   تحت مجوز Lottie Simple License (FL 9.13.21).<br>
+   <b>نویسنده:</b> Eddy Koek<br><br>
+6. <b>انیمیشن چرخش گوشی رایگان</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">لینک</a><br>
+   تحت مجوز Lottie Simple License (FL 9.13.21).<br>
+   <b>نویسنده:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-fa">سیاست حفظ حریم خصوصی</a></b><br>
+]]></string>
+
+</resources>

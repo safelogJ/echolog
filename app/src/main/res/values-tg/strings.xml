@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Оғози сард боиси часпидани тугма шуд — реҷаи бе дасти фаъол шуд 😅</string>
+    <string name="plus_text_size">калонии ҳарфҳоро зиёд кардан</string>
+    <string name="minus_text_size">калонии ҳарфҳоро кам кардан</string>
+    <string name="touch_btn">фишор диҳед ва гӯед</string>
+    <string name="notice_btn">Дастур</string>
+    <string name="color_btn">Рангҳо</string>
+    <string name="start">Баъдӣ</string>
+    <string name="color_view_text"><![CDATA[Ранги замина ва матнро интихоб намоед:<br><br>
+Заминаи сиёҳ ва матни сафед → контрасти классикии баланд.<br><br>
+Заминаи сиёҳ ва матни зард → контрасти баланд, барои дислексия мувофиқ аст.<br><br>
+Заминаи кабуд ва матни сафед → хондан осон аст.<br><br>
+Заминаи кабуди торик ва матни зард → қобилияти хонданро беҳтар мекунад.<br><br>
+Заминаи сабзи торик ва матни сафед → контрасти нарм, барои шахсони ранги ношинос мувофиқ аст.<br><br>
+Заминаи хокистарии торик ва матни сафед → равшании паст, барои ҳассосияти нур мувофиқ аст.<br>]]>
+</string>
+    <string name="color_field">Ранги замина</string>
+    <string name="color_text">Ранги матн</string>
+    <string name="rotate_img">Телефонро гардонед</string>
+    <string name="wait">Омодасозӣ.</string>
+    <string name="permission_denied">Иҷозати микрофонро диҳед</string>
+    <string name="error_init">Хатои инициализатсияи китобхона.
+        Файлҳои модели овозӣ метавонанд аз ҷониби барномаҳои тарафи сеюм (оптимизаторҳо, тозакунандагони хотира ва ғ.)
+        нест ё осеб дида бошанд. Кӯшиш кунед, ки барномаро дубора насб намоед.</string>
+    <string name="error_unzip">Хатогии кушодани китобхона, барномаро аз нав оғоз кунед</string>
+    <string name="error_write">Хатогии нигоҳдории танзимот</string>
+    <string name="error_read">Хатогии хониши танзимот</string>
+    <string name="error_speech">Хатои шеносоии нутқ</string>
+    <string name="error_timeout">Мӯҳлати шеносоии нутқ ба поён расид</string>
+    <string name="need_speak">Микрофонро нигоҳ дошта, гап занед.</string>
+    <string name="copied_text">Матн нусхабардорӣ шуд</string>
+    <string name="notice"><![CDATA[
+<br><b>Дастур:</b><br><br>
+1. Тугмаи микрофонро нигоҳ доред ва гап занед. Барнома овозро дар вақти воқеӣ таҳлил мекунад. Натиҷаи муваққатӣ
+дар экран намоиш дода мешавад.<br>
+2. Пас аз анҷоми ҷумла, интизор шавед, то натиҷаи муваққатӣ нопадид шавад, ва баъд тугмаи микрофонро раҳо кунед.<br>
+3. Натиҷаи ниҳоӣ дар экран пайдо мешавад.<br><br>
+Агар шумо тугмаи микрофонро пеш аз анҷоми ҷумла раҳо кунед, танҳо натиҷаи муваққатӣ нигоҳ дошта мешавад.<br><br>
+<br><br><b>Ин барнома китобхонаҳои кушода ва тарафи сеюмро истифода мебарад:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Пайванд</a><br>
+ Литсензия шудааст тибқи Apache License, Version 2.0.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ Версияи истифодашавандаи китобхона дар экрани барнома нишон дода мешавад.<br>
+ Шумо метавонед версияи худро аз китобхонаи VOSK истифода баред. Барои ин, бойгонӣ бо версияи дилхоҳро зеркашӣ намоед, масалан аз пайванд:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Бойгонии мобилӣ одатан бо "small" ишора шудааст ва тақрибан 50 МБ мебошад.<br>
+ Бойгонӣ кушоед ва фолдери ҳосилшударо, беҳтараш бе нусхаҳои иловагӣ, ба фолдери барнома гузоред:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Агар китобхонаи шумо муваффақона оғоз шавад, номи он дар экран нишон дода мешавад. Дар акси ҳол, версияи дарунсохт оғоз мешавад.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Пайванд</a><br>
+ Литсензия шудааст тибқи Apache License, Version 2.0.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Пайванд</a><br>
+   Литсензия шудааст тибқи Apache License, Version 2.0.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Пайванд</a><br>
+    Литсензия шудааст тибқи Apache License, Version 2.0.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Пайванд</a><br>
+ Литсензияшуда тибқи Lottie Simple License (FL 9.13.21).<br>
+ <b>Муаллиф:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Пайванд</a><br>
+ Литсензияшуда тибқи Lottie Simple License (FL 9.13.21).<br>
+ <b>Муаллиф:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-tg">Сиёсати махфият</a></b><br>
+]]></string>
+
+</resources>

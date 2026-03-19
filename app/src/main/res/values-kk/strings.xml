@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Суық іске қосу батырманың жабысып қалуына себеп болды — еркін қол режимі қосылды 😅</string>
+    <string name="plus_text_size">мәтін өлшемін ұлғайту</string>
+    <string name="minus_text_size">мәтін өлшемін азайту</string>
+    <string name="touch_btn">басып сөйлеңіз</string>
+    <string name="notice_btn">Нұсқаулық</string>
+    <string name="color_btn">Түстер</string>
+    <string name="start">Келесі</string>
+    <string name="color_view_text"><![CDATA[Фон және мәтін түсін таңдаңыз:<br><br>
+Қара фон және ақ мәтін → классикалық жоғары контраст.<br><br>
+Қара фон және сары мәтін → дислексия үшін ыңғайлы жоғары контраст.<br><br>
+Көк фон және ақ мәтін → жақсы оқылады.<br><br>
+Көк түсті фон және сары мәтін → оқылымдылықты арттырады.<br><br>
+Қою жасыл фон және ақ мәтін → жұмсақ контраст, түсі дұрыс көрмейтіндерге ыңғайлы.<br><br>
+Қою сұр фон және ақ мәтін → төмен жарықтық, жарыққа сезімталдық үшін ыңғайлы.<br>]]>
+</string>
+    <string name="color_field">Фон түсі</string>
+    <string name="color_text">Мәтін түсі</string>
+    <string name="rotate_img">Телефонды бұраңыз</string>
+    <string name="wait">Дайындалып жатыр…</string>
+    <string name="permission_denied">Микрофонға рұқсат беріңіз</string>
+    <string name="error_init">Кітапхананы инициализациялау қатесі.
+        Дауыс үлгісінің файлдары үшінші тарап қолданбалары (оптимизаторлар, жад тазартқыштар және т.б.)
+        арқылы жойылған немесе бүлінген болуы мүмкін. Қолданбаны қайта орнатып көріңіз.</string>
+    <string name="error_unzip">Кітапхана ашу қатесі, бағдарламаны қайта қосыңыз</string>
+    <string name="error_write">Баптауларды сақтау қатесі</string>
+    <string name="error_read">Баптауларды оқу қатесі</string>
+    <string name="error_speech">Дауысты тану қатесі</string>
+    <string name="error_timeout">Дауысты тану уақыты аяқталды</string>
+    <string name="need_speak">Микрофонды басып тұрып сөйлеңіз.</string>
+    <string name="copied_text">Мәтін көшірілді</string>
+    <string name="notice"><![CDATA[
+<br><b>Нұсқаулық:</b><br><br>
+1. Микрофон түймесін басып тұрып, сөйлеңіз. Бағдарлама дауысты нақты уақыт режимінде талдайды. Алдын ала нәтиже
+дереу экранда көрсетіледі.<br>
+2. Сөйлемді аяқтап, алдын ала нәтиже экраннан жойылғанша күтіңіз, содан кейін микрофон түймесін босатыңыз.<br>
+3. Соңғы нәтиже экранда пайда болады.<br><br>
+Егер сөйлемді аяқтамай микрофон түймесін босатсаңыз, тек алдын ала нәтиже сақталады.<br><br>
+    <br><br><b>Бұл бағдарлама ашық көзі және үшінші тарап кітапханаларын қолданады:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Сілтеме</a><br>
+ Apache License, Version 2.0 бойынша лицензияланған.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ Қолданылатын кітапхана нұсқасы бағдарлама экранында көрсетіледі.<br>
+ Сіз өзіңіздің VOSK кітапханаңыздың нұсқасын қолдана аласыз, ол үшін қажетті нұсқаны жүктеп алуыңыз керек, мысалы, мына сілтемеден:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Мобильді құрылғыларға арналған архив әдетте "small" деп аталады және көлемі шамамен 50 МБ.<br>
+ Оны архивтен шығарып, алынған қалтаны (қайталаусыз) бағдарлама қалтасына қойыңыз:<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Егер кітапхана сәтті жүктелсе, оның атауы бағдарлама экранында көрсетіледі. Әйтпесе, кіріктірілген нұсқасы іске қосылады.<br><br>
+  2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Сілтеме</a><br>
+ Apache License, Version 2.0 бойынша лицензияланған.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">Сілтеме</a><br>
+   Apache License, Version 2.0 бойынша лицензияланған.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Сілтеме</a><br>
+    Apache License, Version 2.0 бойынша лицензияланған.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Тегін жүктеу анимациясы</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Сілтеме</a><br>
+   Lottie Simple License (FL 9.13.21) лицензиясы бойынша.<br>
+   <b>Автор:</b> Eddy Koek<br><br>
+6. <b>Тегін телефонды бұру анимациясы</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Сілтеме</a><br>
+   Lottie Simple License (FL 9.13.21) лицензиясы бойынша.<br>
+   <b>Автор:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-kk">Құпиялылық саясаты</a></b><br>
+]]></string>
+
+</resources>

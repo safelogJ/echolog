@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">Soğuk başlatma düğmenin takılmasına neden oldu — eller serbest modu etkinleştirildi 😅</string>
+    <string name="plus_text_size">metin boyutunu artır</string>
+    <string name="minus_text_size">metin boyutunu azalt</string>
+    <string name="touch_btn">dokunun ve konuşun</string>
+    <string name="notice_btn">Talimat</string>
+    <string name="color_btn">Renkler</string>
+    <string name="start">İleri</string>
+    <string name="color_view_text"><![CDATA[Arka plan ve metin rengini seçin:<br><br>
+Siyah arka plan ve beyaz metin → klasik yüksek kontrast.<br><br>
+Siyah arka plan ve sarı metin → disleksi için uygun yüksek kontrast.<br><br>
+Mavi arka plan ve beyaz metin → iyi fark edilir.<br><br>
+Lacivert arka plan ve sarı metin → okunabilirliği artırır.<br><br>
+Koyu yeşil arka plan ve beyaz metin → yumuşak kontrast, renk körlüğü için uygundur.<br><br>
+Koyu gri arka plan ve beyaz metin → düşük parlaklık, ışığa duyarlılık için uygundur.<br>]]>
+</string>
+    <string name="color_field">Arka plan rengi</string>
+    <string name="color_text">Metin rengi</string>
+    <string name="rotate_img">Telefonu döndürün</string>
+    <string name="wait">Hazırlanıyor.</string>
+    <string name="permission_denied">Mikrofona izin verin</string>
+    <string name="error_init">Kütüphane başlatma hatası.
+        Ses modeli dosyaları üçüncü taraf uygulamalar (optimizatörler, bellek temizleyiciler vb.) tarafından silinmiş veya bozulmuş olabilir.
+        Uygulamayı yeniden yüklemeyi deneyin.</string>
+    <string name="error_unzip">Kütüphane çıkarma hatası, uygulamayı yeniden başlatın</string>
+    <string name="error_write">Ayarları kaydetme hatası</string>
+    <string name="error_read">Ayarları okuma hatası</string>
+    <string name="error_speech">Konuşma tanıma hatası</string>
+    <string name="error_timeout">Konuşma tanıma zaman aşımı</string>
+    <string name="need_speak">Mikrofonu basılı tutarak konuşun.</string>
+    <string name="copied_text">Metin kopyalandı</string>
+    <string name="notice"><![CDATA[
+<br><b>Talimat:</b><br><br>
+1. Mikrofon düğmesini basılı tutun ve konuşun. Uygulama sesi gerçek zamanlı olarak analiz edecektir. Ön sonuç
+ekranda görünecektir.<br>
+2. Cümlenizi bitirdikten sonra, ön sonuç ekrandan kaybolana kadar bekleyin ve ardından mikrofon düğmesini bırakın.<br>
+3. Nihai sonuç ekranda görünecektir.<br><br>
+Eğer cümlenizi bitirmeden mikrofon düğmesini bırakırsanız, yalnızca ön sonuç kaydedilir.<br><br>
+    <br><br><b>Bu uygulama açık kaynaklı ve üçüncü taraf kütüphaneler kullanmaktadır:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Bağlantı</a><br>
+ Apache License, Version 2.0 ile lisanslanmıştır.<br>
+  Copyright © Alpha Cephei Inc.<br><br>
+ Kullanılan kütüphane versiyonu uygulama ekranında gösterilir.<br>
+ Kendi VOSK kütüphanenizi kullanabilirsiniz, bunun için aşağıdaki bağlantıdan istediğiniz sürümü indirmeniz gerekir:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Mobil cihazlar için arşiv genellikle "small" olarak adlandırılır ve yaklaşık 50 MB boyutundadır.<br>
+ Arşivi çıkarın ve çıkan klasörü, mümkünse tekrarsız olarak, uygulama klasörüne yerleştirin -<br>
+  /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Kütüphane başarıyla başlatılırsa, adı uygulama ekranında gösterilir. Aksi takdirde, yerleşik sürüm başlatılır.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Airbnb, Inc.<br><br>
+ 3. <b>Okio</b> <a href="https://github.com/square/okio">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Square, Inc.<br><br>
+ 4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Bağlantı</a><br>
+   Lottie Simple License (FL 9.13.21) ile lisanslanmıştır.<br>
+   <b>Yazar:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Bağlantı</a><br>
+   Lottie Simple License (FL 9.13.21) ile lisanslanmıştır.<br>
+   <b>Yazar:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-tr">Gizlilik Politikası</a></b><br>
+]]></string>
+</resources>

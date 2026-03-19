@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cold_start_text">콜드 스타트로 버튼이 붙었어요 — 핸즈프리 모드 활성화됨 😅</string>
+    <string name="plus_text_size">텍스트 크기 늘리기</string>
+    <string name="minus_text_size">텍스트 크기 줄이기</string>
+    <string name="touch_btn">누르고 말하세요</string>
+    <string name="notice_btn">지침</string>
+    <string name="color_btn">색상</string>
+    <string name="start">다음</string>
+    <string name="color_view_text"><![CDATA[배경색과 텍스트 색상을 선택하세요:<br><br>
+검정 배경과 흰색 텍스트 → 클래식한 고대비.<br><br>
+검정 배경과 노란색 텍스트 → 난독증에 적합한 고대비.<br><br>
+파란 배경과 흰색 텍스트 → 읽기 쉬움.<br><br>
+짙은 파란 배경과 노란 텍스트 → 가독성 향상.<br><br>
+짙은 녹색 배경과 흰색 텍스트 → 부드러운 대비, 색맹에 적합.<br><br>
+짙은 회색 배경과 흰색 텍스트 → 낮은 밝기, 광민감에 적합.<br>]]>
+</string>
+    <string name="color_field">배경 색상</string>
+    <string name="color_text">텍스트 색상</string>
+    <string name="rotate_img">휴대폰을 회전하세요</string>
+    <string name="wait">준비 중입니다.</string>
+    <string name="permission_denied">마이크 권한을 허용하세요</string>
+    <string name="error_init">라이브러리 초기화 오류. 음성 모델 파일이 서드파티 앱(최적화 도구, 메모리 클리너 등)에 의해 삭제되었거나 손상되었을 수 있습니다. 앱을 다시 설치해 보세요.</string>
+    <string name="error_unzip">라이브러리 압축 해제 오류, 앱을 다시 시작하세요</string>
+    <string name="error_write">설정 저장 오류</string>
+    <string name="error_read">설정 읽기 오류</string>
+    <string name="error_speech">음성 인식 오류</string>
+    <string name="error_timeout">음성 인식 시간 초과</string>
+    <string name="need_speak">마이크를 누른 상태로 말하세요.</string>
+    <string name="copied_text">텍스트가 복사되었습니다</string>
+    <string name="notice"><![CDATA[
+<br><b>지침:</b><br><br>
+1. 마이크 버튼을 누른 채로 말하세요. 앱은 음성을 실시간으로 분석합니다. 임시 결과가
+화면에 바로 표시됩니다.<br>
+2. 문장을 마친 후, 임시 결과가 사라질 때까지 기다린 다음 마이크 버튼을 놓으세요.<br>
+3. 최종 결과가 화면에 표시됩니다.<br><br>
+문장을 끝내기 전에 마이크 버튼을 놓으면 임시 결과만 저장됩니다.<br><br>
+<br><br><b>이 앱은 오픈소스 및 서드파티 라이브러리를 사용합니다:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">링크</a><br>
+ Apache License, Version 2.0에 따라 라이선스가 부여되었습니다.<br>
+   Copyright © Alpha Cephei Inc.<br><br>
+ 사용 중인 라이브러리 버전은 앱 화면에 표시됩니다.<br>
+ 다른 VOSK 라이브러리를 사용하고 싶다면, 예를 들어 다음 링크에서 원하는 버전을 다운로드하세요:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ 모바일용 아카이브는 일반적으로 "small"로 표시되며 약 50MB입니다.<br>
+ 압축을 해제하고 해당 폴더를 앱 폴더에 복사하세요 (중복 없이):<br>
+ /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ 라이브러리가 성공적으로 초기화되면 앱 화면에 이름이 표시됩니다. 그렇지 않으면 내장 버전이 사용됩니다.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">링크</a><br>
+ Apache License, Version 2.0에 따라 라이선스가 부여되었습니다.<br>
+   Copyright © Airbnb, Inc.<br><br>
+3. <b>Okio</b> <a href="https://github.com/square/okio">링크</a><br>
+   Apache License, Version 2.0에 따라 라이선스가 부여되었습니다.<br>
+   Copyright © Square, Inc.<br><br>
+4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">링크</a><br>
+    Apache License, Version 2.0에 따라 라이선스가 부여되었습니다.<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">링크</a><br>
+   Lottie Simple License (FL 9.13.21)에 따라 라이선스가 부여되었습니다.<br>
+   <b>작성자:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">링크</a><br>
+   Lottie Simple License (FL 9.13.21)에 따라 라이선스가 부여되었습니다.<br>
+   <b>작성자:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-ko">개인정보처리방침</a></b><br>
+]]></string>
+
+</resources>
