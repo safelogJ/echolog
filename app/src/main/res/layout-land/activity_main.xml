@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/main_background">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -21,44 +20,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/topGuideline"
+        android:id="@+id/startGuideRightBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/CenterGuideline"
+        android:id="@+id/startGuideLeftBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/startBtnGuideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.98" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/startActCardView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
         app:layout_constraintStart_toStartOf="@+id/startGuideLeft"
-        app:layout_constraintTop_toTopOf="@+id/topGuideline">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="parent"
@@ -70,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:fontFamily="serif"
+                android:textDirection="anyRtl"
                 android:gravity="center"
                 app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +77,37 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/textViewLibInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:elevation="8dp"
+        android:fontFamily="serif"
+        android:gravity="top|end"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/startActCardView"
+        app:layout_constraintTop_toTopOf="@+id/startActCardView" />
+
+    <TextView
+        android:id="@+id/textViewColdStartInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:elevation="8dp"
+        android:fontFamily="serif"
+        android:gravity="bottom|start"
+        android:text="@string/cold_start_text"
+        android:textColor="@color/cold_start_red"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/startActCardView"
+        app:layout_constraintEnd_toEndOf="@+id/startActCardView"
+        app:layout_constraintStart_toStartOf="@+id/startActCardView" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/plusButton"
         android:layout_width="wrap_content"
@@ -87,11 +115,10 @@
         android:contentDescription="@string/plus_text_size"
         android:src="@drawable/plus_icon"
         app:backgroundTint="@color/black"
-        app:elevation="3dp"
         app:layout_constraintBottom_toTopOf="@+id/touchView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
-        app:layout_constraintTop_toBottomOf="@+id/topGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRightBtn"
+        app:layout_constraintStart_toEndOf="@+id/startGuideLeftBtn"
+        app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="@color/black3"
         app:tint="@color/white" />
 
@@ -102,10 +129,9 @@
         android:contentDescription="@string/minus_text_size"
         android:src="@drawable/minus_icon"
         app:backgroundTint="@color/black"
-        app:elevation="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRightBtn"
+        app:layout_constraintStart_toEndOf="@+id/startGuideLeftBtn"
         app:layout_constraintTop_toBottomOf="@+id/touchView"
         app:rippleColor="@color/black3"
         app:tint="@color/white" />
@@ -117,9 +143,8 @@
         android:background="@drawable/mic_icon"
         android:contentDescription="@string/touch_btn"
         app:layout_constraintBottom_toTopOf="@+id/minusButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintStart_toEndOf="@+id/startGuideRight"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRightBtn"
+        app:layout_constraintStart_toEndOf="@+id/startGuideLeftBtn"
         app:layout_constraintTop_toBottomOf="@+id/plusButton"
         app:layout_constraintVertical_chainStyle="spread" />
 

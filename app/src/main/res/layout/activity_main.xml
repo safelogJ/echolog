@@ -2,72 +2,78 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/main_background">
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/startGuideRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/startGuideLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/startCenterGuideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/startBtnGuideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/startActCardView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:backgroundTint="@color/black"
-        app:cardBackgroundColor="@color/no_data"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:cardCornerRadius="10dp"
         app:cardElevation="6dp"
         app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
-        app:layout_constraintEnd_toEndOf="@id/startGuideRight"
-        app:layout_constraintStart_toEndOf="@+id/startGuideLeft"
-        app:layout_constraintTop_toTopOf="@+id/startCenterGuideline">
+        app:layout_constraintEnd_toEndOf="@+id/noticeButton"
+        app:layout_constraintStart_toStartOf="@+id/noticeButton"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
-            android:id="@+id/NativeView"
+        <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="6dp"
-            android:layout_marginTop="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:ellipsize="none"
+                    android:textDirection="anyRtl"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lineSpacingExtra="2dp"
+                    android:overScrollMode="never"
+                    android:padding="8dp"
+                    android:scrollbars="none"
+                    android:singleLine="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/rotateImgView"
-        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
-        app:layout_constraintStart_toStartOf="@+id/startGuideLeft"
+        android:rotationY="180"
+        app:layout_constraintBottom_toTopOf="@+id/colorButton"
+        app:layout_constraintEnd_toEndOf="@+id/noticeButton"
+        app:layout_constraintStart_toStartOf="@+id/noticeButton"
         app:layout_constraintTop_toTopOf="@+id/startBtnGuideline"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
@@ -82,8 +88,8 @@
         android:contentDescription="@string/rotate_img"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/colorButton"
-        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
-        app:layout_constraintStart_toStartOf="@+id/startGuideLeft"
+        app:layout_constraintEnd_toEndOf="@+id/noticeButton"
+        app:layout_constraintStart_toStartOf="@+id/noticeButton"
         app:layout_constraintTop_toTopOf="@+id/startBtnGuideline"
         app:srcCompat="@drawable/rotate_800" />
 
@@ -96,7 +102,7 @@
         android:text="@string/color_btn"
         android:textSize="34sp"
         app:backgroundTint="@color/black"
-        app:cornerRadius="10dp"
+        app:cornerRadius="15dp"
         app:elevation="3dp"
         app:layout_constraintBottom_toTopOf="@+id/noticeButton"
         app:layout_constraintEnd_toEndOf="@+id/noticeButton"
@@ -104,18 +110,36 @@
 
     <Button
         android:id="@+id/noticeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/notice_btn"
         android:text="@string/notice_btn"
         android:textSize="34sp"
         app:backgroundTint="@color/black"
-        app:cornerRadius="10dp"
+        app:cornerRadius="15dp"
         app:elevation="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
-        app:layout_constraintStart_toStartOf="@+id/startGuideLeft" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/youtubeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:clickable="true"
+        android:contentDescription="@string/youtube_link"
+        android:focusable="true"
+        app:backgroundTint="@color/cold_start_red"
+        app:layout_constraintBottom_toBottomOf="@+id/noticeButton"
+        app:layout_constraintEnd_toEndOf="@+id/noticeButton"
+        app:layout_constraintTop_toTopOf="@+id/noticeButton"
+        app:rippleColor="@color/cold_start_red"
+        app:srcCompat="@drawable/youtube_activity_48px"
+        app:tint="@color/white" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

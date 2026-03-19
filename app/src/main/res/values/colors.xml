@@ -5,7 +5,8 @@
     <color name="black3">#666666</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F44336</color>
-    <color name="red_light">#EF9A9A</color>
+    <color name="cold_start_red">#FF0000</color>
+    <color name="red_light">#FDD4D4</color>
     <color name="no_data">#FFFFFF</color>
     <color name="signal_2g">#E53935</color>
     <color name="signal_3g">#00E676</color>
@@ -23,7 +24,7 @@
     <color name="green_100">#B9F6CA</color>
     <color name="green_600">#43A047</color>
     <color name="blue_gray_50">#FAFBFF</color>
-    <color name="gold">#FFE082</color>
+    <color name="gold">#E0E0E0</color>
     <color name="gold_hard">#FFCA28</color>
     <color name="main_background">#F1F3F6</color>
     <color name="chart_transparent_5">#00FFFFFF</color>

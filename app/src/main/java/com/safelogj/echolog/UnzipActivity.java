@@ -1,25 +1,18 @@
 package com.safelogj.echolog;
 
-import android.Manifest;
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.safelogj.echolog.databinding.ActivityUnzipBinding;
 
@@ -27,20 +20,18 @@ import com.safelogj.echolog.databinding.ActivityUnzipBinding;
 public class UnzipActivity extends AppCompatActivity {
 
     private AppController mController;
-    private int permCounter;
     private ActivityUnzipBinding mBinding;
-    private final ActivityResultCallback<Boolean> requestRecord = isGranted -> {
-        if (Boolean.FALSE == isGranted) {
-            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
-            permCounter++;
-            if (permCounter > 2) {
-                permCounter = 0;
-                openAppSettings();
-            }
+
+    public void startAct(boolean error) {
+        if (!error) {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        } else {
+            startActivity(new Intent(getApplicationContext(), ErrorActivity.class));
+            finish();
         }
-    };
-    private final ActivityResultLauncher<String> requestRecordPermissionLauncher =
-            registerForActivityResult(new ActivityResultContracts.RequestPermission(), requestRecord);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,13 +40,24 @@ public class UnzipActivity extends AppCompatActivity {
         mBinding = ActivityUnzipBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(mBinding.getRoot(), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+            Insets systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets gestureInsets = insets.getInsets(WindowInsetsCompat.Type.mandatorySystemGestures());
+            int leftPadding = Math.max(gestureInsets.left, systemBarInsets.left);
+            int rightPadding = Math.max(gestureInsets.right, systemBarInsets.right);
+            int bottomPadding = Math.max(gestureInsets.bottom, systemBarInsets.bottom);
+            int leftPaddingLand = Math.max(leftPadding, systemBarInsets.top);
+            int rightPaddingLand = Math.max(rightPadding, systemBarInsets.top);
+
+            if (v.getContext().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                v.setPadding(leftPaddingLand, systemBarInsets.top, rightPaddingLand, bottomPadding);
+            } else {
+                v.setPadding(leftPadding, systemBarInsets.top, rightPadding, bottomPadding);
+            }
+            return WindowInsetsCompat.CONSUMED;
         });
+
+        setLightStatusBar();
         mController = (AppController) getApplication();
-        setLottieListener();
-        setNextBtnListener();
     }
 
     @Override
@@ -64,54 +66,28 @@ public class UnzipActivity extends AppCompatActivity {
         mBinding.lottieView.postDelayed(() -> {
             if (!mBinding.lottieView.isAnimating()) {
                 mBinding.lottieView.setVisibility(View.INVISIBLE);
-                mBinding.nextButton.setVisibility(View.VISIBLE);
+                mBinding.unzipTextView.setVisibility(View.VISIBLE);
             }
         }, 500);
+        doResult();
     }
 
-
-    private void openAppSettings() {
-        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-        intent.setData(Uri.parse("package:" + getPackageName()));
-        startActivity(intent);
+    private void doResult() {
+        if (mController.ismError()) {
+            startActivity(new Intent(getApplicationContext(), ErrorActivity.class));
+            finish();
+        } else if (mController.ismInit()) {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
     }
 
-    private boolean isPerm() {
-        return ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
+    private void setLightStatusBar() {
+        WindowInsetsControllerCompat controller = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        controller.setAppearanceLightStatusBars(true);
+        controller.setAppearanceLightNavigationBars(true);
+        //  if (Build.VERSION.SDK_INT < Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.main_background));
+        // }
     }
-
-    private void setLottieListener() {
-        mBinding.lottieView.addAnimatorListener(new AnimatorListenerAdapter() {
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-                if (!isPerm()) {
-                    requestRecordPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO);
-                } else if (mController.ismError()) {
-                    startActivity(new Intent(getApplicationContext(), ErrorActivity.class));
-                    finish();
-                } else if (mController.ismInit() && isPerm()) {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    finish();
-                }
-            }
-        });
-    }
-
-    private void setNextBtnListener() {
-        mBinding.nextButton.setOnClickListener(view -> {
-            if (!isPerm()) {
-                requestRecordPermissionLauncher.launch(android.Manifest.permission.RECORD_AUDIO);
-            } else if (mController.ismError()) {
-                startActivity(new Intent(getApplicationContext(), ErrorActivity.class));
-                finish();
-            } else if (mController.ismInit() && isPerm()) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
-            } else {
-                Toast.makeText(this, getString(R.string.wait), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
 }

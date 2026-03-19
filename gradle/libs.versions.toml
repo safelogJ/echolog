@@ -1,16 +1,16 @@
 [versions]
-agp = "8.8.0"
+agp = "9.0.0"
 junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
-material = "1.12.0"
-activity = "1.10.0"
-constraintlayout = "2.2.0"
-vosk = "0.3.47"
-netjava = "5.16.0"
-yandexsdk = "7.9.0"
-lottie = "6.6.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+activity = "1.11.0"
+constraintlayout = "2.2.1"
+vosk = "0.3.70"
+netjava = "5.18.1"
+lottie = "6.7.1"
+okio = "3.16.4"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -22,8 +22,8 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 vosk = { group = "com.alphacephei", name = "vosk-android", version.ref = "vosk" }
 netjava = { group = "net.java.dev.jna", name = "jna", version.ref = "netjava" }
-yandexsdk = {group = "com.yandex.android", name = "mobileads", version.ref = "yandexsdk"}
 lottie = {group = "com.airbnb.android", name = "lottie", version.ref = "lottie"}
+okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -14,7 +14,25 @@ limitations under the License.
 
 The following libraries are used in this project:
 
-1. vosk-api (https://github.com/alphacep/vosk-api?tab=Apache-2.0-1-ov-file)
+1. vosk-api
+   Copyright © Alpha Cephei Inc.
+   Licensed under the Apache License, Version 2.0.
+   https://github.com/alphacep/vosk-api?tab=Apache-2.0-1-ov-file
+
+2.Lottie
+   Copyright © Airbnb, Inc.
+   Licensed under the Apache License, Version 2.0
+   https://github.com/airbnb/lottie-android
+
+3. Okio
+   Copyright © Square, Inc.
+   Licensed under the Apache License, Version 2.0
+   https://github.com/square/okio
+
+4. Java Native Access (JNA)
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.
+   Licensed under the Apache License, Version 2.0
+   https://github.com/java-native-access/jna
 
   Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this software except in compliance with the License.
@@ -233,7 +251,18 @@ The following libraries are used in this project:
 
 
 
-2. Free data Animation (Lottie Simple License (FL 9.13.21))
+5. Free Loading Animation
+   Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Eddy Koek
+   https://lottiefiles.com/free-animation/loading-mqIYlHgteQ
+
+6. Free Rotate Phone Animation
+   Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Sandeep Maurya
+   https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS
+
+
+ Free data Animation (Lottie Simple License (FL 9.13.21))
    Licensed under the Lottie Simple License (FL 9.13.21)
 
 

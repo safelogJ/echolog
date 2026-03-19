@@ -1,49 +1,69 @@
 <resources>
-    <string name="app_name">Echolog</string>
-    <string name="plus_text_size">plus_text_size</string>
-    <string name="minus_text_size">minus_text_size</string>
-    <string name="touch_btn">touch_and_speak</string>
-    <string name="notice_btn">Инструкция</string>
-    <string name="color_btn">Цвета</string>
-    <string name="start">Далее</string>
-    <string name="color_view_text"><![CDATA[Выберите цвет фона и текста:<br><br>
-Чёрный фон и белый текст → классический высокий контраст.<br><br>
-Чёрный фон и жёлтый текст → высокая контрастность, удобна для дислексии.<br><br>
-Синий фон и белый текст → хорошо различимо.<br><br>
-Тёмно-синий фон и жёлтый текст → повышенная читаемость.<br><br>
-Тёмно-зелёный фон и белый текст → мягкий контраст, удобен для дальтоников.<br><br>
-Тёмно-серый фон и белый текст → сниженная яркость, удобна для светочувствительности.<br>]]>
-    </string>
-    <string name="color_field">Цвет фона</string>
-    <string name="color_text">Цвет текста</string>
-    <string name="rotate_img">Поверните телефон</string>
-    <string name="wait">Идёт инициализация, повторите через пару секунд.</string>
-    <string name="permission_denied">Предоставьте разрешение для микрофона</string>
-    <string name="error_init">Ошибка инициализации, перезапустите приложение</string>
-    <string name="error_unzip">Ошибка распаковки библиотеки, перезапустите приложение</string>
-    <string name="error_write">Ошибка записи настроек</string>
-    <string name="error_read">Ошибка чтения настроек</string>
-    <string name="error_speech">Ошибка распознавания речи</string>
+    <string name="app_name" translatable="false">Micolored</string>
+    <string name="cold_start_text">Soğuk başlatma düğmenin takılmasına neden oldu — eller serbest modu etkinleştirildi 😅</string>
+    <string name="youtube_link" translatable="false">Youtube</string>
+    <string name="plus_text_size">metin boyutunu artır</string>
+    <string name="minus_text_size">metin boyutunu azalt</string>
+    <string name="touch_btn">dokunun ve konuşun</string>
+    <string name="notice_btn">Talimat</string>
+    <string name="color_btn">Renkler</string>
+    <string name="start">İleri</string>
+    <string name="color_view_text"><![CDATA[Arka plan ve metin rengini seçin:<br><br>
+Siyah arka plan ve beyaz metin → klasik yüksek kontrast.<br><br>
+Siyah arka plan ve sarı metin → disleksi için uygun yüksek kontrast.<br><br>
+Mavi arka plan ve beyaz metin → iyi fark edilir.<br><br>
+Lacivert arka plan ve sarı metin → okunabilirliği artırır.<br><br>
+Koyu yeşil arka plan ve beyaz metin → yumuşak kontrast, renk körlüğü için uygundur.<br><br>
+Koyu gri arka plan ve beyaz metin → düşük parlaklık, ışığa duyarlılık için uygundur.<br>]]>
+</string>
+    <string name="color_field">Arka plan rengi</string>
+    <string name="color_text">Metin rengi</string>
+    <string name="rotate_img">Telefonu döndürün</string>
+    <string name="wait">Hazırlanıyor.</string>
+    <string name="permission_denied">Mikrofona izin verin</string>
+    <string name="error_init">Başlatma hatası, uygulamayı yeniden başlatın</string>
+    <string name="error_unzip">Kütüphane çıkarma hatası, uygulamayı yeniden başlatın</string>
+    <string name="error_write">Ayarları kaydetme hatası</string>
+    <string name="error_read">Ayarları okuma hatası</string>
+    <string name="error_speech">Konuşma tanıma hatası</string>
+    <string name="error_timeout">Konuşma tanıma zaman aşımı</string>
+    <string name="need_speak">Mikrofonu basılı tutarak konuşun.</string>
+    <string name="copied_text">Metin kopyalandı</string>
     <string name="notice"><![CDATA[
-<br><b>Инструкция:</b><br><br>
-1. Удерживайте кнопку микрофона и говорите. Приложение в реальном времени будет анализировать звук. Предварительный результат
- сразу будет отображаться на экране.<br>
-2. Закончите фразу, дождитесь когда текстовое поле очистится от предварительного результата и после этого отпустите кнопку микрофона.<br>
-3. На экране появиться финальный результат с вашей фразой.<br><br>
-Если вы отпускаете кнопку микрофона до окончания фразы, результатом так и останется предварительный вариант.<br>
-Если вы закончили фразу, но отпустили кнопку микрофона до очистки экрана, результатом будет предварительный вариант
-или финальный + предварительный.<br>
- Финальный вариант заканчивается точкой, предварительный нет.<br><br>
-    <br><br><b>Это приложение включает в себя библиотеки с открытым исходным кодом и сторонние библиотеки:</b><br><br>
-1. <b>vosk-model-small-ru-0.22</b> <a href="https://github.com/alphacep/vosk-space/blob/master/models.md?ysclid=m6nbuv402c728193722">Ссылка</a><br>
- Licensed under the Apache License, Version 2.0.<br>
-2. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Ссылка</a><br>
-   Licensed under the Lottie Simple License (FL 9.13.21)<br>
-   <b>Автор:</b> Eddy Koek<br><br>
-3. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Ссылка</a><br>
-   Licensed under the Lottie Simple License (FL 9.13.21)<br>
-   <b>Автор:</b> Sandeep Maurya <br><br>
-<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy">Политика конфиденциальности</a></b><br>
+<br><b>Talimat:</b><br><br>
+1. Mikrofon düğmesini basılı tutun ve konuşun. Uygulama sesi gerçek zamanlı olarak analiz edecektir. Ön sonuç
+ekranda görünecektir.<br>
+2. Cümlenizi bitirdikten sonra, ön sonuç ekrandan kaybolana kadar bekleyin ve ardından mikrofon düğmesini bırakın.<br>
+3. Nihai sonuç ekranda görünecektir.<br><br>
+Eğer cümlenizi bitirmeden mikrofon düğmesini bırakırsanız, yalnızca ön sonuç kaydedilir.<br><br>
+    <br><br><b>Bu uygulama açık kaynaklı ve üçüncü taraf kütüphaneler kullanmaktadır:</b><br><br>
+1. <b>vosk-model-small-tr-0.3</b> <a href="https://alphacephei.com/vosk/">Bağlantı</a><br>
+ Apache License, Version 2.0 ile lisanslanmıştır.<br>
+  Copyright © Alpha Cephei Inc.<br><br>
+ Kullanılan kütüphane versiyonu uygulama ekranında gösterilir.<br>
+ Kendi VOSK kütüphanenizi kullanabilirsiniz, bunun için aşağıdaki bağlantıdan istediğiniz sürümü indirmeniz gerekir:<br>
+ <a href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a><br>
+ Mobil cihazlar için arşiv genellikle "small" olarak adlandırılır ve yaklaşık 50 MB boyutundadır.<br>
+ Arşivi çıkarın ve çıkan klasörü, mümkünse tekrarsız olarak, uygulama klasörüne yerleştirin -<br>
+  /Android/data/com.safelogj.echolog/files/you_vosk_lib<br>
+ Kütüphane başarıyla başlatılırsa, adı uygulama ekranında gösterilir. Aksi takdirde, yerleşik sürüm başlatılır.<br><br>
+ 2. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Airbnb, Inc.<br><br>
+ 3. <b>Okio</b> <a href="https://github.com/square/okio">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Square, Inc.<br><br>
+ 4. <b>Java Native Access (JNA)</b> <a href="https://github.com/java-native-access/jna">Bağlantı</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   Copyright © Timothy Wall, Todd Fast, Liang Chen, et al.<br><br>
+5. <b>Free Loading Animation</b> <a href="https://lottiefiles.com/free-animation/loading-mqIYlHgteQ">Bağlantı</a><br>
+   Lottie Simple License (FL 9.13.21) ile lisanslanmıştır.<br>
+   <b>Yazar:</b> Eddy Koek<br><br>
+6. <b>Free Rotate Phone Animation</b> <a href="https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS">Bağlantı</a><br>
+   Lottie Simple License (FL 9.13.21) ile lisanslanmıştır.<br>
+   <b>Yazar:</b> Sandeep Maurya <br><br>
+<b><a href="https://github.com/safelogJ/echolog/blob/master/privacy-tr">Gizlilik Politikası</a></b><br>
 ]]></string>
+
 
 </resources>

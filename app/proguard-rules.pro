@@ -19,3 +19,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# --- Не вырезать и не обфусцировать JNA ---
+-keep class com.sun.jna.** { *; }
+-dontwarn com.sun.jna.**
+
+# --- Не вырезать Vosk ---
+-keep class org.vosk.** { *; }
+-dontwarn org.vosk.**
+
+-assumenosideeffects class android.util.Log {
+    public static int v(...);
+    public static int d(...);
+    public static int i(...);
+}

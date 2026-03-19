@@ -1,28 +1,33 @@
+import com.android.build.api.dsl.ApplicationExtension
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
-android {
+configure <ApplicationExtension> {
     namespace = "com.safelogj.echolog"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.safelogj.echolog"
         minSdk = 21
-        targetSdk = 35
-        versionCode = 5
-        versionName = "1.4"
+        targetSdk = 36
+        versionCode = 21
+        versionName = "2.8.6 tr+"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
         }
+
+
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -48,8 +53,10 @@ dependencies {
         exclude(group = "net.java.dev.jna", "jna")
     }
     implementation(libs.netjava)
-    implementation(libs.yandexsdk)
-    implementation(libs.lottie)
+    implementation(libs.lottie) {
+        exclude(group = "com.squareup.okio", module = "okio")
+    }
+    implementation(libs.okio)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

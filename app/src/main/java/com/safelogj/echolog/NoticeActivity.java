@@ -1,14 +1,18 @@
 package com.safelogj.echolog;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.text.HtmlCompat;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.safelogj.echolog.databinding.ActivityNoticeBinding;
 
@@ -20,10 +24,24 @@ public class NoticeActivity extends AppCompatActivity {
         ActivityNoticeBinding binding = ActivityNoticeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(binding.getRoot(), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+            Insets systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets gestureInsets = insets.getInsets(WindowInsetsCompat.Type.mandatorySystemGestures());
+            int leftPadding = Math.max(gestureInsets.left, systemBarInsets.left);
+            int rightPadding = Math.max(gestureInsets.right, systemBarInsets.right);
+            int bottomPadding = Math.max(gestureInsets.bottom, systemBarInsets.bottom);
+            int leftPaddingLand = Math.max(leftPadding, systemBarInsets.top);
+            int rightPaddingLand = Math.max(rightPadding, systemBarInsets.top);
+
+            if (v.getContext().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                v.setPadding(leftPaddingLand, systemBarInsets.top, rightPaddingLand, bottomPadding);
+            } else {
+                v.setPadding(leftPadding, systemBarInsets.top, rightPadding, bottomPadding);
+            }
+            return WindowInsetsCompat.CONSUMED;
         });
+
+        setLightStatusBar();
+
         AppController controller = (AppController) getApplication();
         binding.noticeTextView.setText(HtmlCompat.fromHtml(getString(R.string.notice), HtmlCompat.FROM_HTML_MODE_LEGACY));
         binding.noticeTextView.setTextSize(controller.getTextSize());
@@ -31,6 +49,15 @@ public class NoticeActivity extends AppCompatActivity {
         binding.noticeScrollView2.setBackgroundColor(controller.getFieldColor().getColor());
         binding.noticeTextView.setTextColor(controller.getTextColor().getColor());
         binding.noticeTextView.setLinkTextColor(controller.getTextColor().getColor());
+    }
+
+    private void setLightStatusBar() {
+        WindowInsetsControllerCompat controller = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        controller.setAppearanceLightStatusBars(true);
+        controller.setAppearanceLightNavigationBars(true);
+        //  if (Build.VERSION.SDK_INT < Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.main_background));
+        //  }
     }
 
 }

@@ -1,0 +1,47 @@
+
+   NOTICE
+
+   This application includes open source and third-party libraries:
+
+   1. AndroidX Libraries (AppCompat, Activity, ConstraintLayout)
+      Copyright © The Android Open Source Project
+      License: Apache License, Version 2.0
+      Link: https://developer.android.com/jetpack/androidx
+
+   2. Google Material Components
+      Copyright © Google LLC
+      License: Apache License, Version 2.0
+      Link: https://github.com/material-components/material-components-android
+
+   3. Vosk Android SDK (com.alphacephei)
+      Copyright © Alpha Cephei Inc.
+      License: Apache License, Version 2.0
+      Link: https://alphacephei.com/vosk/android
+
+   4. JNA (Java Native Access)
+      Copyright © Timothy Wall, 2007-2022
+      License: Apache License, Version 2.0 OR LGPL 2.1
+      Link: https://github.com/java-native-access/jna
+
+   5. Lottie Android
+      Copyright © Airbnb, Inc.
+      License: Apache License, Version 2.0
+      Link: https://github.com/airbnb/lottie-android
+
+   6. Okio
+      Copyright © Square, Inc.
+      License: Apache License, Version 2.0
+      Link: https://github.com/square/okio
+
+   7. Free Loading Animation (https://lottiefiles.com/free-animation/loading-mqIYlHgteQ)
+      Licensed under the Lottie Simple License (FL 9.13.21)
+      Author: Eddy Koek
+
+   8. Free Rotate Phone Animation (https://lottiefiles.com/free-animation/rotate-phone-QZQdb2qCwS)
+      Licensed under the Lottie Simple License (FL 9.13.21)
+      Author: Sandeep Maurya
+
+   9. JUnit 4
+      Copyright © JUnit. All Rights Reserved.
+      License: Eclipse Public License 1.0
+      Link: https://github.com/junit-team/junit4
