@@ -1,5 +1,10 @@
 # Offline Speech-to-Text
 
+## Links
+
+[![Google Play](https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.safelogj.echolog)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/maNAYwyKn94)
+
 ### Introduction
 App for offline speech-to-text recognition.
 * By holding the microphone button, you speak and the text appears on the screen in large font.
