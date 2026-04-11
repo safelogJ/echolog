@@ -22,7 +22,7 @@ By following the instructions in the app, you can replace the VOSK library and c
 
 ### License
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
-
+___
 ### ❤️ Support
 
 * Ozon : 2204 2402 5165 6593
