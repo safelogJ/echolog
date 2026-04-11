@@ -10,6 +10,8 @@
 gen/
 bin/
 assets/
+app/src/androidTest/
+app/src/test/
 
 # Local and generated configurations
 local.properties
