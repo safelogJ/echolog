@@ -154,7 +154,49 @@ public class AppController extends Application {
         }
     }
 
-    private void unzipAsset() {
+private void unzipAsset() {
+    try (InputStream is = getAssets().open("vosk.zip");
+         ZipInputStream zis = new ZipInputStream(is)) {
+        String canonicalDestDir = mFileDir.getCanonicalPath();
+        ZipEntry zipEntry;
+        while ((zipEntry = zis.getNextEntry()) != null) {
+            File file = new File(mFileDir, zipEntry.getName());
+            String canonicalPath = file.getCanonicalPath();
+            if (!canonicalPath.startsWith(canonicalDestDir + File.separator)) {
+                throw new IOException("Entry is outside of the target dir: " + zipEntry.getName());
+            }
+
+            if (zipEntry.isDirectory()) {
+                if (!file.exists() && !file.mkdirs()) {
+                    throw new IOException("Failed to create directory: " + file.getAbsolutePath());
+                }
+            } else {
+                // Создаем родительские папки, если их еще нет
+                File parent = file.getParentFile();
+                if (parent != null && !parent.exists()) {
+                    parent.mkdirs();
+                }
+
+                try (FileOutputStream fos = new FileOutputStream(file)) {
+                    byte[] buffer = new byte[1024];
+                    int length;
+                    while ((length = zis.read(buffer)) > 0) {
+                        fos.write(buffer, 0, length);
+                    }
+                }
+            }
+            zis.closeEntry();
+        }
+        mError = initAppRecognizer();
+
+    } catch (Exception e) {
+        mError = true;
+        mErrorText = getString(R.string.error_unzip);
+    }
+    callUnzipActivity(mError);
+}
+
+    private void unzipAsset1() {
         try (InputStream is = getAssets().open("vosk.zip");
              ZipInputStream zis = new ZipInputStream(is)) {
             ZipEntry zipEntry;
